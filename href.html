@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+<!-- Version: 20160727T170224 -->
+<head>
+  <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Example Starter Page - DPS Prepaid Consumer Style Guide</title>
+
+    <link href="Content/base.css" rel="stylesheet"/>
+    <link href="Content/print.css" rel="stylesheet"/>
+    <link href="Content/prism.css" rel="stylesheet"/>
+    <link href="Themes/default/stylesheets/site.css" rel="stylesheet"/>
+    <link href="Content/dps.styleguide.css" rel="stylesheet"/>
+    
+    <script src="Scripts/vendor/jquery-2.1.3.js"></script>
+<script src="Scripts/vendor/jquery-ui.js"></script>
+<script src="Scripts/vendor/jquery.validate.js"></script>
+<script src="Scripts/vendor/modernizr.js"></script>
+<script src="Scripts/vendor/jquery.cookie.js"></script>
+<script src="Scripts/vendor/fastclick.js"></script>
+<script src="Scripts/vendor/date.format.js"></script>
+<script src="Scripts/foundation/foundation.js"></script>
+<script src="Scripts/foundation/foundation.abide.js"></script>
+<script src="Scripts/foundation/foundation.accordion.js"></script>
+<script src="Scripts/foundation/foundation.alert.js"></script>
+<script src="Scripts/foundation/foundation.clearing.js"></script>
+<script src="Scripts/foundation/foundation.dropdown.js"></script>
+<script src="Scripts/foundation/foundation.equalizer.js"></script>
+<script src="Scripts/foundation/foundation.interchange.js"></script>
+<script src="Scripts/foundation/foundation.joyride.js"></script>
+<script src="Scripts/foundation/foundation.magellan.js"></script>
+<script src="Scripts/foundation/foundation.offcanvas.js"></script>
+<script src="Scripts/foundation/foundation.orbit.js"></script>
+<script src="Scripts/foundation/foundation.reveal.js"></script>
+<script src="Scripts/foundation/foundation.slider.js"></script>
+<script src="Scripts/foundation/foundation.tab.js"></script>
+<script src="Scripts/foundation/foundation.tooltip.js"></script>
+<script src="Scripts/foundation/foundation.topbar.js"></script>
+<script src="Scripts/dps.datepicker.js"></script>
+<script src="Scripts/dps.modal.js"></script>
+<script src="Scripts/dps.expando.collapso.js"></script>
+<script src="Scripts/dps.role.alert.js"></script>
+<script src="Scripts/dps.header.js"></script>
+<script src="Scripts/dps.navigation.js"></script>
+<script src="Scripts/dps.messaging.js"></script>
+<script src="Scripts/dps.global.alert.js"></script>
+<script src="Scripts/dps.tooltip.js"></script>
+<script src="Scripts/vendor/respond.js"></script>
+<script src="Scripts/vendor/prism.js"></script>
+<script src="Scripts/vendor/jquery.trap.js"></script>
+<script src="Scripts/dps.styleguide.js"></script>
+
+</head>
+<!--[if IE 9]><body class="lt-ie10"> <![endif]-->
+<!--[if lt IE 9]><body class="lt-ie9"> <![endif]-->
+<body>
+    <!-- Page Content -->
+    
+
+
+
+<!-- Skip to Content Link -->
+<a class="skip-to" href="#content">Skip to content</a>
+
+<div class="header-container" role="banner">
+    <div class="row header-row ">
+        <div class="small-12 medium-10 custom-medium-push-2 columns brand-container show-for-medium-up">
+            <div class="small-12 medium-4 custom-medium-push-8 columns">
+                <div class="logo-wrapper">
+                    <img id="brand-logo" class="header-logo medium img-responsive" alt="Blue and Gold Bank" src="Themes/default/_Images/header-logo-medium.png"/>
+                </div>
+            </div>
+            <div class="small-12 medium-8 custom-medium-pull-4 columns">
+                <div class="program-wrapper">
+                    <span class="header-card-program">Reload.io</span>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-2 custom-medium-pull-10 columns sign-in-out-container show-for-medium-up">
+            <p class="header-signout"><a href="#">Sign Out</a> <i class="fa fa-angle-double-right"></i></p>
+        </div>
+
+        <!-- Navigation Menu - mobile view -->
+        <div class="small-12 show-for-small-only columns">
+            <nav data-topbar="" class="top-bar mobile-nav" role="navigation">
+                <ul class="title-area">
+                    <li class="name"><img id="brand-logo" class="header-logo medium img-responsive" alt="Blue and Gold" src="Themes/default/_Images/header-logo-medium.png"/></li>
+                    <li class="toggle-topbar menu-icon"><a role="button" tabindex="0" href="#">Expand Navigation Menu</a></li>
+                    <li class="header-card-program">Reload.io</li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul class="left">
+                        <li class="has-dropdown not-click">
+                            <a role="button" tabindex="0">Nav Item  <i class="fa fa-angle-double-down"></i></a>
+                            <ul class="dropdown">
+                                <li class="has-dropdown not-click">
+                                    <a href="">Sub Nav item 1</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Sub Nav item 1</a></li>
+                                        <li><a href="">Sub Nav item 2</a></li>
+                                        <li><a href="">Sub Nav item 3</a></li>
+                                        <li><a href="">Sub Nav item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Sub Nav item 2</a></li>
+                                <li><a href="">Sub Nav item 3</a></li>
+                                <li><a href="">Sub Nav item 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown not-click"><a role="button" tabindex="0">Nav Item Link2  <i class="fa fa-angle-double-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="">Sub Nav item 1</a></li>
+                                <li><a href="">Sub Nav item 2</a></li>
+                                <li><a href="">Sub Nav item 3</a></li>
+                                <li><a href="">Sub Nav item 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown not-click"><a role="button" tabindex="0">Nav Item Link3  <i class="fa fa-angle-double-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Sub Nav item 1</a></li>
+                                <li><a href="#">Sub Nav item 2</a></li>
+                                <li><a href="#">Sub Nav item 3</a></li>
+                                <li><a href="#">Sub Nav item 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown not-click"><a role="button" tabindex="0">Nav Item Link4  <i class="fa fa-angle-double-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Sub Nav item 1</a></li>
+                                <li><a href="#">Sub Nav item 2</a></li>
+                                <li><a href="#">Sub Nav item 3</a></li>
+                                <li><a href="#">Sub Nav item 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=")">Nav Item Link</a></li>
+                        <li><a href="javascript:void(0)">Sign Out</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </div>
+
+<!-- Navigation Menu - Desktop view -->
+<div class="row show-for-medium-up">
+    <div class="medium-12 columns">
+        <nav data-topbar="" class="top-bar desktop-nav" role="navigation">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li class="has-dropdown not-click">
+                        <a href="javascript:void(0)" class="selected">Nav Item (Selected)  <i class="fa fa-angle-double-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="">Sub Nav item 1</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Sub Nav item 1</a></li>
+                                    <li><a href="">Sub Nav item 2</a></li>
+                                    <li><a href="">Sub Nav item 3</a></li>
+                                    <li><a href="">Sub Nav item 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Sub Nav item 2</a></li>
+                            <li><a href="">Sub Nav item 3</a></li>
+                            <li><a href="">Sub Nav item 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown not-click"><a href="javascript:void(0)">Nav Item Link2  <i class="fa fa-angle-double-down"></i></a>
+                        <ul class="dropdown">
+                            <li class="has-dropdown not-click"><a href="">Balance & Transactions</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Sub Nav item 1</a></li>
+                                    <li><a href="">Sub Nav item 2</a></li>
+                                    <li><a href="">Sub Nav item 3</a></li>
+                                    <li><a href="">Sub Nav item 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown not-click"><a href="">Sub Nav item 2</a>
+                                <ul class="dropdown">
+                                    <li><a href="">xSub Nav item 1</a></li>
+                                    <li><a href="">Sub Nav item 2</a></li>
+                                    <li><a href="">Sub Nav item 3</a></li>
+                                    <li><a href="">Sub Nav item 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown not-click"><a href="">Sub Nav item 3</a>
+                                <ul class="dropdown">
+                                    <li><a href="">xSub Nav item 1</a></li>
+                                    <li><a href="">Sub Nav item 2</a></li>
+                                    <li><a href="">Sub Nav item 3</a></li>
+                                    <li><a href="">Sub Nav item 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown not-click"><a href="">Sub Nav item 4</a>
+                                <ul class="dropdown">
+                                    <li><a href="">xSub Nav item 1</a></li>
+                                    <li><a href="">Sub Nav item 2</a></li>
+                                    <li><a href="">Sub Nav item 3</a></li>
+                                    <li><a href="">Sub Nav item 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown not-click"><a href="javascript:void(0)">Nav Item Link3  <i class="fa fa-angle-double-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Sub Nav item 1</a></li>
+                            <li><a href="#">Sub Nav item 2</a></li>
+                            <li><a href="#">Sub Nav item 3</a></li>
+                            <li><a href="#">Sub Nav item 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown not-click"><a href="javascript:void(0)">Nav Item Link4  <i class="fa fa-angle-double-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Sub Nav item 1</a></li>
+                            <li><a href="#">Sub Nav item 2</a></li>
+                            <li><a href="#">Sub Nav item 3</a></li>
+                            <li><a href="#">Sub Nav item 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Nav Item Link</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+</div>
+    
+</div>
+
+
+<div class="content-container" id="content" role="main">
+    
+    <form action="/samplefi/depayroll/Verify/Register" id="MainForm2" method="post">
+        <input name="__RequestVerificationToken" type="hidden" value="PwGSXTlJqu7fjeDYky7NXgkLb_NT5TxEQrF3t9OSYfU9U-1lvM41e6bkWIw9AMeNyfSDlTjC8_6yV9SvYo-H99GwEFczAcIo25nAnl0euTE1">
+
+        <div class="row">
+            <div class="large-12 medium-12 small-12 column">
+                <div class="validation-summary-valid message warning" data-valmsg-summary="true" data-visaalert="" style="display: none; visibility: visible;" aria-hidden="true">
+                    
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <ul>
+                        <li style="display:none"></li>
+                    </ul>
+
+                </div>
+                <h1>href="#"</h1>
+        
+            </div>
+
+        </div>
+
+        <div class="box">
+        <div class="row">
+            <div class="medium-12 columns">
+                <div class="large-12 medium-12 small-12 column">
+                        <p class="align-right margin-bottom-none">
+                            <span class="required" aria-required="true">*</span>
+                             Required fields
+                        </p>
+                </div>
+                    
+
+<h2>Additional Verification Required</h2><p>We are unable to recognize the device you are using. Answer the following questions to verify your identity.</p>
+
+                
+<div class="row form-row">
+    <div class="large-3 medium-5 small-12 column ">
+        <label class="form-control" for="VerifyUserResponseHandler_Model_KBAChallenges_0__Answer">What is your mother's maiden name?&nbsp;<strong class="required" aria-required="true">*&nbsp;</strong></label>
+
+    </div>
+    <div class="large-4 medium-4 small-12 columns left">
+        <input aria-invalid="false" aria-required="true" autocomplete="off" class="stretch" data-val="true" data-val-multipleregexone="Invalid value for What is your mother's maiden name?." data-val-multipleregexone-patternone="^.{2,20}$" data-val-multipleregexzero="Invalid special characters for What is your mother's maiden name?." data-val-multipleregexzero-patternzero="" data-val-visarequired="What is your mother's maiden name? is required." data-val-visarequired-invalidifforselectlist="" id="VerifyUserResponseHandler_Model_KBAChallenges_0__Answer" maxlength="200" name="VerifyUserResponseHandler.Model.KBAChallenges[0].Answer" type="password" value="">
+        <span class="field-validation-valid error text" data-valmsg-for="VerifyUserResponseHandler.Model.KBAChallenges[0].Answer" data-valmsg-replace="true" id="VerifyUserResponseHandler_Model_KBAChallenges_0__Answer_Validation"></span>
+
+    </div>
+    <div class="large-5 medium-3 small-12 columns left"></div>
+
+</div>
+<div class="row form-row">
+    <div class="large-3 medium-5 small-12 column ">
+        <label class="form-control" for="VerifyUserResponseHandler_Model_KBAChallenges_1__Answer">What is your father's middle name?&nbsp;<strong class="required" aria-required="true">*&nbsp;</strong></label>
+
+    </div>
+    <div class="large-4 medium-4 small-12 columns left">
+        <input aria-invalid="false" aria-required="true" autocomplete="off" class="stretch" data-val="true" data-val-multipleregexone="Invalid value for What is your father's middle name?." data-val-multipleregexone-patternone="^.{2,20}$" data-val-multipleregexzero="Invalid special characters for What is your father's middle name?." data-val-multipleregexzero-patternzero="" data-val-visarequired="What is your father's middle name? is required." data-val-visarequired-invalidifforselectlist="" id="VerifyUserResponseHandler_Model_KBAChallenges_1__Answer" maxlength="200" name="VerifyUserResponseHandler.Model.KBAChallenges[1].Answer" type="password" value="">
+        <span class="field-validation-valid error text" data-valmsg-for="VerifyUserResponseHandler.Model.KBAChallenges[1].Answer" data-valmsg-replace="true" id="VerifyUserResponseHandler_Model_KBAChallenges_1__Answer_Validation"></span>
+
+    </div>
+    <div class="large-5 medium-3 small-12 columns left"></div>
+
+</div>
+                
+<div class="row form-row">
+    <div class="large-3 medium-5 small-12 column ">
+        <label class="form-control" for="VerifyUserResponseHandler_Model_KBAChallenges_2__Answer">What is your pet's name?&nbsp;<strong class="required" aria-required="true">*&nbsp;</strong></label>
+
+    </div>
+    <div class="large-4 medium-4 small-12 columns left">
+        <input aria-invalid="false" aria-required="true" autocomplete="off" class="stretch" data-val="true" data-val-multipleregexone="Invalid value for What is your pet's name?." data-val-multipleregexone-patternone="^.{2,20}$" data-val-multipleregexzero="Invalid special characters for What is your pet's name?." data-val-multipleregexzero-patternzero="" data-val-visarequired="What is your pet's name? is required." data-val-visarequired-invalidifforselectlist="" id="VerifyUserResponseHandler_Model_KBAChallenges_2__Answer" maxlength="200" name="VerifyUserResponseHandler.Model.KBAChallenges[2].Answer" type="password" value="">
+        <span class="field-validation-valid error text" data-valmsg-for="VerifyUserResponseHandler.Model.KBAChallenges[2].Answer" data-valmsg-replace="true" id="VerifyUserResponseHandler_Model_KBAChallenges_2__Answer_Validation"></span>
+
+    </div>
+    <div class="large-5 medium-3 small-12 columns left"></div>
+
+</div>
+                
+<div class="">
+    <input id="ProfileHandler_Model_KbaRememberDevice" name="ProfileHandler.Model.KbaRememberDevice" type="checkbox" value="true">
+    <label class="normal" for="ProfileHandler_Model_KbaRememberDevice">Remember This Device
+        
+    <input name="ProfileHandler.Model.KbaRememberDevice" type="hidden" value="false">
+    
+</div>
+              
+
+                <!--
+<input type="text" />
+<input type="submit" value="Submit" />
+                -->
+<div class="small-12 columns button-group">
+    <button id="xyz-button" class="button small navigationButton primary" data-route="Verify/ProfileCreation" name="Submit">Button</button>
+<input id="VerifyProfileCreationSubmit" class="button small navigationButton primary" data-route="Verify/ProfileCreation" name="Submit" type="submit" value="Continue">
+    <input id="VerifyCancelCancel" class="button small navigationButton standard cancel" data-route="Verify/Cancel" name="Cancel" type="submit" value="Cancel">
+    <input id="VerifyVerifyYourIdentityBack" class="button small navigationButton standard back" data-route="Verify/VerifyYourIdentity" name="Back" type="submit" value="Back"></div></div></div></div>
+
+
+        
+        
+    </form>
+
+
+
+<form action="/samplefi/depayroll/Verify/Register" id="MainForm" method="post">
+    <input name="__RequestVerificationToken" type="hidden" value="PwGSXTlJqu7fjeDYky7NXgkLb_NT5TxEQrF3t9OSYfU9U-1lvM41e6bkWIw9AMeNyfSDlTjC8_6yV9SvYo-H99GwEFczAcIo25nAnl0euTE1">
+    
+    <!--
+    <div class="row">
+        <div class="large-12 medium-12 small-12 column">
+            <div class="validation-summary-valid message warning" data-valmsg-summary="true" data-visaalert="" style="display: none; visibility: visible;" aria-hidden="true">
+                <button aria-label="Close" tabindex="0" class="close" title="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <i class="fa fa-exclamation-triangle"></i>
+                <ul>
+                    <li style="display:none"></li>
+                </ul>
+
+            </div>
+            <h1>Security Information</h1>
+
+        </div>
+
+    </div>
+        -->
+
+           <input type="submit" class="a11y-hide-all" value="Submit">
+</form>
+    </div>
+
+
+
+<div class="footer" role="contentinfo">
+    <div class="row">
+        <div class="small-12 columns">
+            <ul class="footer-navigation" role="navigation" aria-label="Footer">
+                <li><a href="#" class="">FAQ</a></li>
+                <li><a href="#" class="">Site Map</a></li>
+                <li><a href="#" class="">Contact Us</a></li>
+                <li><a href="#" class="">Privacy / Security</a></li>
+                <li><a href="#" class="">Terms & Conditions</a></li>
+                <li><a href="#" class="">Blue & Gold</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="extra">
+        <div class="small-12 columns">
+            <!--
+            <div class="row language">
+                <div class="small-6 columns language-label">
+                    Language
+                </div>
+                <div class="small-6 columns">
+                    <a href="#" data-dropdown="language-drop" class="small dropdown">
+                       <i class="fa fa-angle-double-down"></i> <span id="lang-selection">English</span>
+                    </a>
+                    <ul id="language-drop" data-dropdown-content class="f-dropdown">
+                        <li><a href="#" lang="en">English</a></li>
+                        <li><a href="#" lang="es">Español</a></li>
+                    </ul>
+                </div>
+            </div>
+                -->
+            <div class="row copyright">
+                <div class="small-12 columns">
+                    <p>©2004 - 2014 Blue & Gold and Visa. All Rights Reserved. <br>Blue & Gold N.A. Member FDIC Equal Housing Lender</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalPlaceHolder" aria-labelledby="dialog-title" aria-describedby="dialog-desc" class="reveal-modal medium" role="dialog" data-reveal>
+    <div class="modal-body">
+        <h2 id="dialog-title" tabindex="0">Email Alert Enrollment Terms</h2>
+        <div id="dialog-desc" class="scrollable">
+            <p>By opting into the email alert service, you are indicating your acceptance of the terms and conditions of the email alert service. (These are described in the Terms and Conditions for the card program, available on the website listed on the back of your prepaid card and/or in the materials provided when you received your card.)</p>
+            <p>To change your email message options or to opt-out of the service, you can visit the website listed on the back of your card.</p>
+            <p>For additional assistance, contact customer service at [Issuer Customer Service #].</p>
+            <p>A monthly fee of [x.xx] is charged to the Prepaid card for email message alerts, beginning when you sign up for email message alerts and verify your enrollment in the service.</p>
+        </div>
+        <hr>
+        <div class="align-right">
+            <button class="button standard small button-close-modal">Close</button>
+        </div>
+        <!-- <a class="close-reveal-modal" tabindex="0" title="Close" role="button">&#215;</a> -->
+        <button aria-label="Close" tabindex="0" class="close-reveal-modal">&#215;</button>
+    </div>
+</div>
+
+    <!-- Initialize Foundation -->
+    <script>
+        $(document).foundation();
+    </script>
+    <!--[if lt IE 9]>
+        <script src="Scripts/vendor/rem.min.js"></script>
+
+    <![endif]-->
+</body>
+</html>
