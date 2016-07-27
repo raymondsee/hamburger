@@ -1,0 +1,113 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Form Controls
+*
+*/
+
+.input-group-addon {
+    i {
+        color: $body-text-color;
+    }
+}
+
+// Labels
+label, .form-label {
+    color: $form-label-color;
+}
+
+// Form Controls
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background-color: white;
+  border: 1px solid $form-controls-border-color;
+  color: $form-controls-text-color;
+
+  &:focus {
+    border: 2px solid $form-controls-active-border-color;
+  }
+
+  &.error, &.input-validation-error {
+    border: 2px solid $form-controls-error-border-color;
+    color: $form-controls-text-error-color;
+  }
+}
+
+select {
+    &.error, &.input-validation-error {
+        color: $body-text-color;
+    }
+}
+
+// Required Form Group (Container)
+.form-control-required {
+
+  .fa.required {
+    color: $form-controls-text-color;
+
+    &.error, &.input-validation-error {
+      color: $form-controls-text-error-color;
+    }
+  }
+}
+
+// Lighten label when form control is disabled
+input[disabled] + label,
+textarea[disabled] + label,
+select[disabled] + label {
+  color: lighten($form-controls-text-color, 20%);
+}
+
+.required {
+  color: $form-controls-text-error-color;
+}
+
+// Helper Text
+.helper.text {
+    color: $form-controls-text-color;
+}
+
+// Error Text
+.error.text {
+  color: $form-controls-text-error-color;
+}
+
+//Fieldset
+fieldset {
+  &.error{
+    border:2px solid $warning-color;
+
+    & label {
+      color: $form-label-color;
+    }
+  }
+}
+
+.lt-ie9 {
+	input[type="password"] {
+		font-family: $ie-font-family; 
+	}
+}
+
+.lt-ie10 {
+    select {
+        background: none;
+    }
+
+	input[type="password"] {
+		font-family: $ie-font-family; 
+	}
+}

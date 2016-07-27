@@ -1,0 +1,20 @@
+.progress {
+	background: $progress-bar-background;
+
+	.meter {
+		background: $progress-bar-default-color;
+		color: $progress-bar-default-text-color;
+	}
+
+	&.alert .meter {
+		color: $progress-bar-alert-text-color;
+	}
+
+	&.success .meter {
+		color: $progress-bar-success-text-color;
+	}
+
+	&.secondary .meter {
+		color: $progress-bar-secondary-text-color;
+	}
+}

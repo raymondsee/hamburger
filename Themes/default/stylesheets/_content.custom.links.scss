@@ -1,0 +1,51 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Custom Links w/ icons and text
+*
+*/
+
+
+.tool-holder {
+    border-top:1px solid $content-custom-links-border-color;
+
+    p {
+        color:$body-text-color;
+    }
+
+    i {
+    	color: $custom-links-icon-color;
+    }
+
+    i.custom-links-blocker {
+    	color:$custom-links-blocker;
+    }
+
+    .custom-link-text {
+    	color:$custom-links-text-color;
+    }
+
+    .custom-link-text i {
+    	color:$custom-links-text-color;
+    }
+
+    &:hover i {
+    	color:$custom-links-text-color-hover;
+    }
+
+    &:hover i.custom-links-blocker {
+    	color:$custom-links-blocker-hover;
+    }
+
+    &:hover .custom-link-text {
+    	color:$custom-links-text-color-hover;
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .tool-holder {
+        border-left: 1px solid $content-custom-links-border-color;
+		border-top: none;
+    }
+}

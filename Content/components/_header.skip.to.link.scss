@@ -1,0 +1,33 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Skip To Content Link
+*
+*/
+
+.skip-to {
+	background: $header-skip-to-link-background-color;
+    display: block;
+    line-height: 3em;
+    margin: 0;
+    text-align: center;
+
+    // Hide offscreen initially
+    height: 1px;
+    left: -99999px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+
+    // Show on focus
+    &:focus {
+        height: auto;
+        left: auto;
+        overflow: hidden;
+        outline: 1px dotted black !important;
+        position: relative;
+        top: auto;
+        width: auto;
+    }
+}

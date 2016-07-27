@@ -1,0 +1,27 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Home Page.
+*
+*/
+
+.feature-rows {
+	background-color: $feature-row-bg-color;
+
+	i.feature-item-icon {
+		color: $icon-color;
+	}
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+	.jump-links {
+		.features-list {
+			border-left: 1px solid $feature-list-divider-color;
+		}
+	}
+
+	.feature-text-box {
+		border-right: 1px solid $feature-text-box-divider-color;
+	}
+} /* min-width 641px, medium screens */

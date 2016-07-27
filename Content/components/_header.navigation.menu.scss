@@ -1,0 +1,139 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Navigation Menu
+*
+*/
+
+// Navigation Menu
+.top-bar-section .dropdown li.title span a {
+	color: $primary-color;
+	line-height: 27.5px;
+	display: block;
+	background: $navigation-back-link-background-color;
+	font-size: 14px;
+}
+
+// The hamburger menu icon
+.top-bar {
+	.toggle-topbar {
+		&.menu-icon {
+			a {
+				background: $menu-icon-bg-color;
+
+				&::after {
+					-webkit-box-shadow: -8px 10px 0 1px $menu-icon-color,
+										-8px 16px 0 1px $menu-icon-color,
+										-8px 22px 0 1px $menu-icon-color;
+              
+					box-shadow: -8px 10px 0 1px $menu-icon-color,
+								-8px 16px 0 1px $menu-icon-color,
+								-8px 22px 0 1px $menu-icon-color;
+				}
+			}
+		}
+	}
+}
+
+.top-bar-section ul li {
+	a.selected {
+		color: $navigation-link-selected;
+	}
+
+	&> a {
+		color: $navigation-link;
+	}
+
+	&:hover > a {
+		color: $navigation-link-over;
+		background: $navigation-link-mobile-hover-background-color
+	}
+}
+
+.top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+	color: $navigation-link-over;
+}
+
+.top-bar-section ul li > a {
+	background: $navigation-link-mobile-background-color;
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .top-bar.tab-style {
+        border: none;
+        box-shadow: none;
+
+        .top-bar-section {
+            ul {
+                margin: 0px;
+				border-bottom: 1px solid $navigation-tab-style-border-color;
+                width: 100%;
+				@include shadow-inset(0px, -22px, 22px, -28px, rgba(0, 0, 0, .4));
+
+                li {
+                    margin-bottom: -1px;
+
+                    a.selected {
+                        border-radius: 3px 3px 0 0; background: white;
+                        border: 1px solid $navigation-tab-style-border-color;
+                        border-bottom-color: white;
+                        border-radius: 3px 3px 0 0;
+                        @include box-shadow(0px, -5px, 32px, -16px, rgba(0, 0, 0, .4));
+                    }
+                }
+            }
+        }
+
+		.top-bar-section > ul > li > a:hover, .top-bar-section > ul > li > a:focus {
+			outline: none;
+		}
+    }
+
+	.top-bar-section {
+		.has-dropdown {
+			.dropdown {
+				li.has-dropdown > a:after {
+					line-height: 0.4;
+					right: -5px;
+				}
+			}
+		}
+	}
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+
+} /* min-width 880px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

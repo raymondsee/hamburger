@@ -1,0 +1,43 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Sign In
+*
+*/
+
+// Small screens
+@media only screen {
+
+    .header-signinbox {
+        background: $header-signinbox-bg-color;
+
+        label {
+            color: $body-text-color;
+        }
+
+        a {
+            color: $sign-in-widget-link-color;
+
+            &:visited {
+                color: $sign-in-widget-link-color;
+            }
+        }
+
+    }
+
+    // Sign Out Link
+    .header-signout {
+        a {
+            color: $sign-in-widget-link-color;
+
+            &:visited {
+                color: $sign-in-widget-link-color;
+            }
+        }
+
+        i {
+            color: $icon-color;
+        }
+    }
+
+} /* Define mobile styles */

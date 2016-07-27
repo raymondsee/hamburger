@@ -1,0 +1,18 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Modal
+*
+*/
+
+.reveal-modal {
+    background: $modal-background-color;
+
+    h2 {
+        color: $modal-heading-color;
+    }
+
+    button.close-reveal-modal {
+		color: $modal-close-button-color;
+    }
+}

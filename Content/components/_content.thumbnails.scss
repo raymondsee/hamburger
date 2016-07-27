@@ -1,0 +1,23 @@
+.thumbnail {
+	text-align: center;
+	border: 1px solid $thumbnail-border-color;
+	border-radius: 4px;
+	padding: 5px;
+	margin-bottom: 20px;
+
+	img {
+		max-height: 180px;
+	}
+
+	.caption {
+		text-align: center;
+		margin-top: 10px;
+
+		button {
+			padding: 8px 20px;
+			font-size: 14px;
+			font-weight: 100;
+			margin-bottom: 0;
+		}
+	}
+}

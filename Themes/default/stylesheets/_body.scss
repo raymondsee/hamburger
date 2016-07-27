@@ -1,0 +1,30 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Body
+*
+*/
+
+body {
+    color: $body-text-color;
+    background: $body-bg-color;
+    font-family: $font-family;
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    body {
+
+		@if $sticky-header == true {
+			padding-top: 170px;
+
+			/*
+			* On home page only, language selector row increased the height of
+			* the header; thus, need to adjust the body padding top
+			*/
+			&.extra-padding { 
+				padding-top: 210px;
+			}
+		}
+    }
+} /* min-width 641px, medium screens */

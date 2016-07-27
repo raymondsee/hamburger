@@ -1,0 +1,188 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Navigation Menu
+*
+*/
+
+.header-container {
+	background: white;
+    @include box-shadow (0px, 0px, 12px, 0px, rgba(0, 0, 0, .4));
+    padding: 0;
+	border-bottom: 1px solid $header-container-border-color;
+	padding-bottom: 0px;
+	z-index: 95;
+}
+
+.header-signinbox {
+    display: inline-block;
+	margin-bottom: 5px;
+
+	&.stretch {
+		max-width: 100%;
+	}
+}
+
+// overide Foundation foundation/components/_top-bar.scss
+.top-bar {
+	margin-top: 10px;
+    height: 65px;
+    
+    .toggle-topbar.menu-icon {
+        top: 16px;
+    }
+
+    // the right padding yield space for the menu hamburger
+    .name {
+        height: auto;
+        padding-right: 40px;
+    }
+}
+
+.lang-selector-top-row {
+	padding: 10px 0px;
+	background: $body-bg-color;
+	text-transform: uppercase;
+	font-size: 13px;
+
+	#lang-label-top {
+		display: inline-block;
+		border-right: 1px solid $body-text-color;
+		padding-right: 10px;
+	}
+
+	.dropdown {
+		margin-left: 10px;
+		i {
+            color: $footer-icon-color;
+        }
+    }
+}
+
+.sign-in-out-container {
+
+	&.show-for-medium-up {
+		padding-left: 0;
+	}
+
+	.header-signout {
+		font-size: 12px;
+
+		i {
+			font-size: 12px;
+		}
+	}
+
+	.forgot-username {
+		text-align: left;
+	}
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+	// overide Foundation foundation/components/_top-bar.scss
+    .top-bar {
+        height: auto;
+    }
+
+    .header-container {
+        width: 100%;
+		padding-bottom: 0px;
+    }
+
+    .brand-container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+		padding: 0;
+
+        .logo-wrapper {
+            display: table-cell; 
+            vertical-align: middle;
+            width: 100%;
+            text-align: right;
+					
+            img.header-logo {
+				width: 100%;
+            }
+					
+        }
+
+        .program-wrapper {
+            .header-card-program {
+				display: table-cell; 
+				vertical-align: middle; 
+				text-align: left;
+            }
+        }
+    }
+
+    .sign-in-out-container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .top-bar .header-card-program {
+        display: none;
+    }
+
+    .top-bar-section li:not(.has-form):first-of-type > a:not(.button) {
+        //padding-left: 0px;
+    }
+
+	.header-signinbox {
+		margin-bottom: 0px;
+	}
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+
+} /* min-width 880px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+	.sign-in-out-container {
+
+		.header-signout {
+
+			a {
+				font-size: 14px;
+			}
+
+			i {
+				font-size: 14px;
+			}
+		}
+
+		.forgot-username {
+			text-align: right;
+		}
+	}
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

@@ -1,0 +1,19 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    text with bg image
+*
+*/
+
+.text-with-bg-image {
+    background:url(../_Images/man_standing_behind_woman.png) no-repeat center top;
+	background-size:cover;
+
+    .title {
+        color:$text-with-bg-img-color;
+    }
+
+    p {
+        color:$text-with-bg-img-color;
+    }
+}

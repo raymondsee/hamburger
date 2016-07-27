@@ -1,0 +1,58 @@
+/**
+* DPS Prepaid Consumer Styles
+* All components include below contain platform CSS, e.g. dimention, height, width, padding, margin, position, etc.
+* The corresponding components which contain Skin CSS (e.g. color, background color, shadow, font family) are located under Themes/default/styleguide/*.scss
+*/
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// DPS Theme Components
+@import
+  "mixins",
+  "bourbon/bourbon",
+  "components/config",
+  "components/colors",
+  "components/accessibility.utils",
+  "components/utils",
+  "components/body",
+  "components/typography",
+  "components/tooltips",
+  "components/form.controls",
+  "components/form.checkboxes",
+  "components/form.radiobuttons",
+  "components/form.buttons",
+  "components/header.card.program",
+  "components/header.signin.out",
+  "components/header.navigation.menu", 
+  "components/header.full",
+  "components/header.skip.to.link",
+  "components/content.carousel",
+  "components/content.text.bg.img", 
+  "components/content.custom.buttons",
+  "components/content.custom.links",
+  "components/content.messaging",
+  "components/content.pagination",
+  "components/content.modal",
+  "components/content.faqs",
+  "components/content.data.grids",
+  "components/content.data.rows",
+  "components/content.box",
+  "components/content.balance",
+  "components/content.images",
+  "components/content.iframe",
+  "components/content.language.selector",
+  "components/content.icon",
+  "components/content.scrollable",
+  "components/content.progress",
+  "components/content.thumbnails", 
+  "components/content.check", 
+  "components/terms.conditions",
+  "components/footer",
+  "components/grid.custom",
+  "components/statement",
+  "components/standalone",
+  "components/home",
+  "components/jquery.ui.datepicker",
+  "components/misc";
+  //"components/form.datepickers"; 

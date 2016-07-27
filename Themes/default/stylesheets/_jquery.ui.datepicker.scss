@@ -1,0 +1,53 @@
+/*!
+ * jQuery UI Datepicker 1.11.4
+ * http://jqueryui.com
+ * http://api.jqueryui.com/datepicker/#theming
+ */
+.ui-datepicker {
+	.ui-widget-header {
+		color: $body-text-color;
+	}
+
+	&.ui-widget-content {
+		background: $datepicker-background-color;
+
+		.ui-state-hover {
+			background: $datepicker-hover-background-color;
+		}
+	}
+
+	td.ui-datepicker-today {
+		background: $datepicker-today-background-color;
+	}
+	
+	td.ui-datepicker-current-day {
+		background: $datepicker-selected-date-background-color;
+	}
+}
+
+button.ui-datepicker-trigger {
+	background: $datepicker-background-color;
+	border: 1px solid $datepicker-button-border-color;
+	color:  $tertiary-color;
+
+	&:hover, &:focus {
+		background: $datepicker-hover-background-color;
+		color:  $tertiary-color;
+	}
+}
+
+.ui-datepicker table { 
+	thead {
+		background: $datepicker-thead-background-color;
+	}
+}
+
+.ui-datepicker th {	
+	border: 1px solid $datepicker-grid-border-color;
+}
+
+.ui-datepicker td {	
+	border: 1px solid $datepicker-grid-border-color;
+}
+
+.ui-widget-header .ui-icon { background-image: url("../_Images/ui-icons_222222_256x240.png")/*{iconsHeader}*/;}

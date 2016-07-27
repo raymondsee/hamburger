@@ -1,0 +1,60 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    "Large" Custom Buttons
+*
+*/
+
+.large-custom-button {
+	background-color:$custom-button-background;
+	border:2px solid $custom-button-border-color;
+	width:100%;
+}
+
+.large-custom-button:hover {
+	background-color:$custom-button-background;
+	border:2px solid $custom-button-border-color-hover;
+}
+
+.large-custom-button.vertical {
+	padding:44px 0 32px; 
+}
+
+.large-custom-button.horizontal {
+	padding:30px 0 32px;
+}
+
+.large-custom-button i.fa {
+	color:$custom-button-icon-color;
+}
+
+.large-custom-button:hover i.fa {
+	color:$custom-button-icon-color-hover;
+}
+
+.large-custom-button.vertical i.fa {
+	margin-bottom:35px;
+	display:block
+}
+
+.large-custom-button.horizontal i.fa {
+	position:absolute;
+	right:10%;
+}
+
+.large-custom-button span {
+	color:$custom-button-text-color;
+	text-align:center;
+	font-size:24px;
+	font-weight:700;
+}
+
+.large-custom-button:hover span {
+	color:$custom-button-text-color-hover;
+}
+
+.large-custom-button.vertical span {
+	width:100px;
+	display:block;
+	margin:0 auto;
+}

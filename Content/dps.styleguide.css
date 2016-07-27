@@ -1,0 +1,423 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Colors
+*
+* IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
+* Good: $body-text-color: #666; Bad: $grey-text: #666;
+*/
+/*
+* Tertiary color applys to a few text components on _color.scss.
+* If you need lighter grey for background color or etc., 
+* you will need to create new color variable
+*/
+/**
+* Header elements orientation variable (Left to right or right to left)
+** if true, Left to right: Logo, program name, and signin/signout widget
+** if false, right to left: Signin/Signout widget, program name, and Logo
+*/
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Colors
+*
+* IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
+* Good: $body-text-color: #666; Bad: $grey-text: #666;
+*/
+.dps-download-css {
+  text-align: center; }
+
+.tab-bar-section .title {
+  float: left;
+  display: inline-block; }
+  .tab-bar-section .title a:active, .tab-bar-section .title a:visited {
+    color: white;
+    text-decoration: none; }
+  .tab-bar-section .title a:hover, .tab-bar-section .title a:focus {
+    text-decoration: underline; }
+
+.tab-bar-section label {
+  float: right;
+  display: inline-block;
+  color: #fff;
+  margin: 11px 10px 0 0; }
+
+.tab-bar-section select {
+  background-color: white;
+  float: right;
+  display: inline-block;
+  width: 10em;
+  margin-top: 4px; }
+
+.sg-visa-logo {
+  display: block;
+  margin: 75px auto 50px auto; }
+
+.sg-header-title a:link,
+.sg-header-title a:visited,
+.sg-header-title a:hover,
+.sg-header-title a:active {
+  color: white; }
+
+.sg-title {
+  color: #333;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1.2em;
+  text-align: center; }
+
+.sg-subtitle {
+  color: #ccc;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center; }
+
+.sg-section-title {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 25px 0;
+  padding-bottom: 10px; }
+  .sg-section-title a {
+    text-decoration: none; }
+
+.sg-component-title {
+  color: #666;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 15px 0; }
+
+.sg-component-rendered,
+.sg-component-html, .sg-component-js {
+  color: #666;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.sg-component-subtitle {
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 25px 0 10px 0; }
+
+.sg-component-subtitle.first {
+  margin-top: 0; }
+
+.sg-code {
+  margin-bottom: 25px; }
+
+.sg-content-spacer {
+  margin-bottom: 30px; }
+
+.sg-small-content-spacer {
+  margin-bottom: 15px; }
+
+.sg-skip-to-focused {
+  background: #f1f1f2;
+  display: block;
+  line-height: 3em;
+  margin: 0;
+  text-align: center;
+  height: auto;
+  left: auto;
+  overflow: hidden;
+  position: relative;
+  top: auto;
+  width: auto;
+  color: #003EA9 !important;
+  text-decoration: underline !important; }
+
+.sg-custom-button-hover {
+  border: 2px solid #1A1F71; }
+
+.sg-custom-button-hover i.fa, .sg-custom-button-hover span {
+  color: #1A1F71; }
+
+.sg-custom-link-hover i, .sg-custom-link-hover .custom-link-text, .sg-custom-link-hover .custom-link-text i {
+  color: #1A1F71; }
+
+.sg-custom-form-control-active {
+  border: 2px solid #0050b9 !important; }
+
+.button.sg-button-primary-hover {
+  background: #003EA9;
+  -moz-box-shadow: inset 0px -8px 0px -4px #002e7f;
+  -webkit-box-shadow: inset 0px -8px 0px -4px #002e7f;
+  box-shadow: inset 0px -8px 0px -4px #002e7f; }
+
+.button.sg-button-secondary-hover {
+  background: #F7B600;
+  -moz-box-shadow: inset 0px -8px 0px -4px #b98800;
+  -webkit-box-shadow: inset 0px -8px 0px -4px #b98800;
+  box-shadow: inset 0px -8px 0px -4px #b98800; }
+
+.button.sg-button-standard-hover {
+  background: #999;
+  -moz-box-shadow: inset 0px -8px 0px -4px #737373;
+  -webkit-box-shadow: inset 0px -8px 0px -4px #737373;
+  box-shadow: inset 0px -8px 0px -4px #737373; }
+
+.button.sg-button-warning-hover {
+  background: #e94c4c;
+  -moz-box-shadow: inset 0px -8px 0px -4px #af3939;
+  -webkit-box-shadow: inset 0px -8px 0px -4px #af3939;
+  box-shadow: inset 0px -8px 0px -4px #af3939; }
+
+.button.sg-button-primary-active {
+  background: #003EA9;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.button.sg-button-secondary-active {
+  background: #F7B600;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.button.sg-button-standard-active {
+  background: #999;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.button.sg-button-warning-active {
+  background: #e94c4c;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+hr {
+  margin: 20px 0 50px; }
+
+.sg-text-right {
+  text-align: right; }
+
+.sg-dummy-body-bg {
+  display: block;
+  background: #f5f2f0;
+  padding: 20px; }
+  .sg-dummy-body-bg .row {
+    margin-left: auto;
+    margin-right: auto; }
+
+.is-visible {
+  color: #468847;
+  background: #dff0d8;
+  text-align: center; }
+
+.is-hidden {
+  color: #CCC;
+  background: #f9f9f9;
+  text-align: center; }
+
+#responsive-ulti-class-table {
+  width: 100%; }
+  #responsive-ulti-class-table thead th {
+    text-align: center; }
+
+.sg-header-container.header-container {
+  position: none; }
+
+.sg-logo-selector img {
+  margin-top: 10px; }
+
+.sg-header-source-code-container {
+  display: none; }
+
+.sg-list a {
+  text-decoration: none; }
+
+.carousel-row.blue-bg {
+  background: #0a3965; }
+
+.sg-position-relative {
+  position: relative; }
+
+ul.off-canvas-list li label {
+  display: block; }
+
+.sg-warning {
+  color: #cc3333; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Carousel
+*
+*/
+.carousel h2 {
+  color: white; }
+.carousel > li {
+  background: #1a1f71;
+  height: 500px; }
+  .carousel > li.slider-1 {
+    background-color: #1a1f71;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a1f71), color-stop(100%, #101448));
+    background-image: -webkit-linear-gradient(left, #1a1f71, #101448);
+    background-image: linear-gradient(to right, #1a1f71, #101448);
+    background: url(../Themes/default/_Images/carousel-backgrounds-slide1.jpg) 0 0 no-repeat; }
+    .carousel > li.slider-1 .slider-content button {
+      background: #1a1f71; }
+  .carousel > li.slider-2 {
+    background-color: #1a1f71;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a1f71), color-stop(100%, #0c0e33));
+    background-image: -webkit-linear-gradient(left, #1a1f71, #0c0e33);
+    background-image: linear-gradient(to right, #1a1f71, #0c0e33); }
+  .carousel > li.slider-3 {
+    background-color: #666666;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666666), color-stop(100%, #404040));
+    background-image: -webkit-linear-gradient(left, #666666, #404040);
+    background-image: linear-gradient(to right, #666666, #404040); }
+  .carousel > li.slider-4 {
+    background-color: #666666;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa9b00), color-stop(100%, #ad6c00));
+    background-image: -webkit-linear-gradient(left, #fa9b00, #ad6c00);
+    background-image: linear-gradient(to right, #fa9b00, #ad6c00); }
+  .carousel > li .slider-content {
+    color: white; }
+    .carousel > li .slider-content h2 {
+      color: white;
+      font-size: 16px; }
+
+.outside-carousel .sign-in-carousel {
+  background: #1a1f71; }
+
+.carousel-row button i, .carousel-row .button i {
+  color: white; }
+.carousel-row .custom-button {
+  border: 2px solid white;
+  background: #1a1f71; }
+  .carousel-row .custom-button:hover, .carousel-row .custom-button:focus, .carousel-row .custom-button:active {
+    border-color: white;
+    color: #1a1f71;
+    background: white; }
+
+@media only screen and (min-width: 40.063em) {
+  .sg-header-right-to-left {
+    /*
+    * Right to Left CSS
+    */ }
+    .sg-header-right-to-left .brand-container .logo-wrapper {
+      display: table-cell;
+      vertical-align: middle;
+      height: 98px;
+      width: 100%;
+      text-align: right; }
+    .sg-header-right-to-left .brand-container .program-wrapper {
+      right: 0;
+      position: absolute;
+      float: right;
+      text-align: right; }
+      .sg-header-right-to-left .brand-container .program-wrapper .header-card-program {
+        text-align: right;
+        display: table-cell;
+        vertical-align: middle; }
+    .sg-header-right-to-left .sign-in-out-container p.header-signout {
+      float: left;
+      /* Right to left CSS */
+      text-align: left;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .header-signinbox {
+      float: left; }
+    .sg-header-right-to-left .custom-medium-push-2 {
+      left: 16.66667%;
+      /* Right to left CSS */
+      right: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-pull-10 {
+      left: auto;
+      /* Right to left CSS */
+      right: 83.33333%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-push-5 {
+      left: 41.66667%;
+      /* Right to left CSS */
+      right: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-pull-7 {
+      right: 58.33333%;
+      /* Right to left CSS */
+      left: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-push-3 {
+      left: 25%;
+      /* Right to left CSS */
+      right: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-pull-9 {
+      left: auto;
+      /* Right to left CSS */
+      right: 75%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-push-7 {
+      right: auto;
+      /* Right to left CSS */
+      left: 58.33333%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-pull-5 {
+      left: auto;
+      /* Right to left CSS */
+      right: 41.66667%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-push-8 {
+      right: auto;
+      /* Right to left CSS */
+      left: 66.66667%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-pull-4 {
+      left: auto;
+      /* Right to left CSS */
+      right: 33.33333%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-push-9 {
+      right: auto;
+      /* Right to left CSS */
+      left: 75%;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-medium-pull-3 {
+      left: auto;
+      /* Right to left CSS */
+      right: 25%;
+      /* Right to left CSS */ }
+
+  .orbit-slides-container {
+    min-height: 513px; }
+
+  .carousel > li {
+    height: 519px; }
+    .carousel > li .slider-content {
+      color: white; }
+      .carousel > li .slider-content h2 {
+        font-size: 24px; } }
+@media only screen and (min-width: 64.063em) {
+  .sg-header-right-to-left {
+    /*
+    * Right to Left CSS
+    */ }
+    .sg-header-right-to-left .custom-large-push-4 {
+      left: 33.33333%;
+      /* Right to left CSS */
+      right: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-large-pull-8 {
+      right: 66.66667%;
+      /* Right to left CSS */
+      left: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-large-push-2 {
+      left: 16.6667%;
+      /* Right to left CSS */
+      right: auto;
+      /* Right to left CSS */ }
+    .sg-header-right-to-left .custom-large-pull-10 {
+      left: auto;
+      /* Right to left CSS */
+      right: 83.3333%;
+      /* Right to left CSS */ }
+
+  .carousel > li .slider-content h2 {
+    font-size: 36px; } }
+/* min-width 1025px, large screens */
+

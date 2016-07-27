@@ -1,0 +1,158 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Sign In
+*
+*/
+
+// Small screens
+@media only screen {
+
+    .header-signinbox {
+        @include border-radius(4px);
+		background: $header-signinbox-bg-color;
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 5px;
+        width: 100%;
+
+        .row, .columns {
+            padding: 0;
+            margin: 0;
+        }
+
+        .input-button-spacing {
+            padding-right: 15px;
+        }
+
+        label {
+            font-weight: bold;
+			color: $body-text-color;
+            font-size: 12px;
+            text-align: left;
+            margin: 0 0 5px 0;
+        }
+
+        input[type=text] {
+            height: 27px;
+            margin: 0 0 9px 0;
+            padding: 4px;
+        }
+
+        .button, .button:hover, .button:active, .button:focus {
+            color: white;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 0 9px 0;
+            padding: 6px 16px;
+            //width: 100%;
+        }
+
+        input[type=checkbox] {
+            margin: 0;
+
+            /* & + label span {
+                margin-right: 10px;
+            } */
+        }
+
+        input[type=checkbox] + label {
+            font-size: 11px;
+            font-weight: 400;
+            margin-left: 0;
+			margin-right: 0;
+            padding-top: 0;
+        }
+
+        a {
+			color: $sign-in-widget-link-color;
+            font-size: 11px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+			&:visited {
+                color: $sign-in-widget-link-color;
+            }
+        }
+
+    }
+
+    // Sign Out Link
+    .header-signout {
+        a {
+			color: $sign-in-widget-link-color;
+            font-size: 12px;
+            text-decoration: none;
+            //text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+            }
+			
+			 &:visited {
+                color: $sign-in-widget-link-color;
+            }
+        }
+
+        i {
+            color: $icon-color;
+        }
+    }
+
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+    .header-signinbox {
+        margin: 0;
+        max-width: 320px;
+
+		input[type=checkbox] + label {
+            font-size: 12px;
+        }
+    }
+   
+    .lt-ie9 {
+        .header-signinbox {
+            .row {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+.header-signinbox {
+    .button {
+        padding-left:4px;
+        padding-right:4px;
+    }
+}
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+
+} /* min-width 880px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+} /* min-width 1025px, large screens */

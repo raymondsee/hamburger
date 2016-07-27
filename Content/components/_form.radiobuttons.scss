@@ -1,0 +1,33 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Checkboxes
+*
+*/
+
+input[type="radio"] {
+	margin: 0;
+	vertical-align: middle;
+
+	&:focus, &:active {
+		outline: dotted thin;
+	}
+}
+
+.error input[type=radio] {
+	margin:0;
+}
+
+input[type=radio].error {
+	outline:2px solid $warning-color;
+}
+
+fieldset {
+	input[type=radio].error {
+		outline:0px;
+
+		&:focus {
+			outline:1px dotted black;			
+		}
+	}
+}

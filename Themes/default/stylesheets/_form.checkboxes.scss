@@ -1,0 +1,15 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Checkboxes
+*
+*/
+
+input[type=chekbox] {
+    background: white;
+    border: 1px solid $form-controls-border-color;
+}
+
+input[type=checkbox].error, input[type=checkbox].input-validation-error {
+    outline:2px solid $warning-color;
+}

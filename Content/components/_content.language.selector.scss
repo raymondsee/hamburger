@@ -1,0 +1,164 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Language Selector
+*
+*/
+
+#language-label {
+	font-size: 12px;
+}
+
+a.dropdown {
+    color: $link-color;
+}
+
+button.dropdown-button {
+    background: transparent;
+	color: $link-color;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
+	i {
+        color: $icon-color;
+    }
+}
+
+ul.language-short-list {
+    display: inline-block;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    line-height: 1.0;
+
+    #lang-label-top {
+        border-right: none;
+    }
+
+    li {
+        display: inline-block;
+        margin-bottom: 0;
+
+        a {
+            font-size: 12px;
+            padding-left: 15px;
+            padding-right: 10px;
+			border-left: 1px solid $body-text-color;
+        }
+
+        &:first-of-type {
+            a {
+                border-left: none;
+            }
+
+            button {
+                border-left: none;
+            }
+        }
+
+		&:last-of-type {
+			button {
+				padding-right: 0;
+			}
+		}
+
+        button {
+            font-size: 12px;
+            background: none;
+            color: $link-color;
+            padding: 0 3px;
+            border-left: 1px solid $body-text-color;
+            @include border-radius(0px);
+            text-transform: uppercase;
+            
+            &:hover, &:focus, &:active {
+				outline: thin dotted;
+				text-decoration: underline;
+			}
+
+            &[aria-selected="true"], &.current {
+                font-weight: bold !important;
+            }
+            
+        }
+    }  
+}
+
+ul.f-dropdown {
+    li {
+        button {
+            background: transparent;
+			color: $link-color;
+            padding: 8px;
+            font-size: 13px;
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    &.f-dropdown-hidden {
+        display: none;
+    }
+
+    &.f-dropdown-show {display: block;}
+}
+
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+	ul.language-short-list {
+		li {
+			button {
+				padding: 0 10px;
+			}
+		}
+	}
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+    
+} /* min-width 880px, medium screens */
+
+// Medium-Large-3 screens
+@media only screen and (min-width: 40em) and (max-width: 60em) {
+    
+} /* min-width 960px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+    
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

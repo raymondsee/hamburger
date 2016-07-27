@@ -1,0 +1,24 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Images
+*
+*/
+
+iframe {
+    &.iframe-small {
+        height: 480px;
+    }
+
+    &.iframe-medium {
+        height: 600px;
+    }
+
+    &.iframe-large {
+        height: 768px;
+    }
+
+    &.iframe-xlarge {
+        height: 960px;
+    }
+}

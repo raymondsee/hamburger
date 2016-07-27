@@ -1,0 +1,29 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Card Program
+*
+*/
+
+.header-card-program {
+    color: $card-program-name-color;
+    font-family: $font-family;
+    font-size: $header-program-name-font-size-small;
+
+    &.seperator {
+        border-left: 1px solid $header-card-program-seperator-color;
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .header-card-program {
+    	font-size: $header-program-name-font-size-large;
+    }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.header-card-program {
+    	font-size: $header-program-name-font-size-medium;
+    }
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

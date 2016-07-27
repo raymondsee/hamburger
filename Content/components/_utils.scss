@@ -1,0 +1,89 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Utils
+*
+*/
+
+.clear {
+    clear:both;
+    float:none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.padding-left-none {
+    padding-left: 0;
+}
+
+.padding-right-none {
+    padding-right: 0;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.fixed {
+    z-index:98;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.margin-top-none {
+    margin-top: 0;
+}
+
+.margin-bottom-none {
+    margin-bottom: 0;
+}
+
+.padding-left-none {
+    padding-left: 0;
+}
+
+.padding-right-none {
+    padding-right: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+a.disabled {
+	color: $disabled-link-color !important;
+    pointer-events: none;
+    cursor: default !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.break-word {
+	word-wrap: break-word;
+}

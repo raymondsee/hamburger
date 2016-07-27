@@ -1,0 +1,43 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Language Selector
+*
+*/
+
+a.dropdown {
+    color: $link-color;
+}
+
+button.dropdown-button {
+    color: $link-color;
+
+    i {
+        color: $icon-color;
+    }
+}
+
+ul.language-short-list {
+    li {
+        a {
+            border-left: 1px solid $body-text-color;
+        }
+
+        button {
+            color: $link-color;
+            border-left: 1px solid $body-text-color;
+        }
+    }
+
+    
+}
+
+ul.f-dropdown {
+    li {
+        button {
+            color: $link-color;
+
+			
+        }
+    }
+}

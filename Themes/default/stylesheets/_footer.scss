@@ -1,0 +1,57 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Footer
+*
+*/
+
+.footer {
+    border-top: 1px solid $footer-border-color;
+    background: $footer-container-background-color;
+
+    .footer-navigation {
+
+        li {
+
+            a {
+                border-bottom: 1px solid $footer-border-color;
+
+                &:link, &:visited {
+                    color: $footer-link-color;
+                }
+
+                &:hover {
+                    color: $footer-link-hover-color;
+                }
+            }
+        }
+    }
+
+    .extra {
+        background: $footer-background-color;
+
+        .language {
+
+            .dropdown {
+                i {
+                    color: $footer-icon-color;
+                }
+            }
+        }
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .footer {
+        .footer-navigation {
+            li {
+                a {
+					border-bottom: none;
+                    border-right: 1px solid $footer-border-color;
+                }
+            }
+        }
+    }
+
+}

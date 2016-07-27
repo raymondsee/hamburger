@@ -1,0 +1,56 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Colors
+*
+* IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
+* Good: $body-text-color: #666; Bad: $grey-text: #666;
+*/
+
+// General Colors
+$primary-color: #1A1F71;
+$secondary-color: #1A1F71;
+/*
+* Tertiary color applys to a few text components on _color.scss.
+* If you need lighter grey for background color or etc., 
+* you will need to create new color variable
+*/
+$tertiary-color: #666; 
+
+// Customized Colors
+$success-color: #058111;
+$warning-color: #CC3333;
+$icon-color: #EF8400;
+$list-bullet-color: $icon-color;
+
+// Carousel dimention
+$carousel-height: 500px;
+$carousel-slides-container-min-height: 513px;
+$carousel-slides-height: 519px;
+
+$carousel-h2-font-size-large: 36px; //font size on large devices
+$carousel-h2-font-size-medium: 24px; //font size on medium devices
+$carousel-h2-font-size-small: 16px; //font size on small devices
+$carousel-text-color: white;
+
+/**
+* Header elements orientation variable (Left to right or right to left)
+** if true, Left to right: Logo, program name, and signin/signout widget
+** if false, right to left: Signin/Signout widget, program name, and Logo
+*/
+$header-left-to-right: true;
+
+// The the height of the banner
+$brand-container-height: 98px;
+
+// header will be fixed at page top if $sticky-header equals to true
+$sticky-header: false;
+
+// Program name font size on large, medium, and small devices
+$header-program-name-font-size-large: 32px; //font size on large devices
+$header-program-name-font-size-medium: 28px; //font size on medium devices
+$header-program-name-font-size-small: 24px; //font size on small devices
+
+$font-family: 'Open Sans', sans-serif;
+$ie-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+

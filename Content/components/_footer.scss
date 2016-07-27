@@ -1,0 +1,100 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Footer
+*
+*/
+
+.footer {
+	border-top: 1px solid $footer-border-color;
+    background: $footer-container-background-color;
+
+    .footer-navigation {
+        list-style: none;
+        margin-left: 0px;
+        margin-top: 25px;
+        text-align: center;
+
+        li {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            a {
+				border-bottom: 1px solid $footer-border-color;
+                display: block;
+                padding: 17px 0;
+
+                &:link, &:visited {
+					color: $footer-link-color;
+                    text-decoration: none;
+                }
+
+                &:hover {
+					color: $footer-link-hover-color;
+                    text-decoration: underline;
+                }
+            }
+
+            &:last-child {
+                a { border: none; }
+            }
+        }
+    }
+
+    .extra {
+		background: $footer-background-color;
+        width: 100%;
+        display: inline-block;
+
+        .language {
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            .language-label {
+                padding-right: 15px;
+                text-align: right;
+            }
+
+			.dropdown {
+                i {
+                    color: $footer-icon-color;
+                }
+            }
+
+            .language-drop {
+                margin-top: 0;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+
+            p {
+                font-size: small;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+    .footer {
+        height: 208px;
+        .footer-navigation {
+            li {
+                display: inline-block;
+
+                a {
+					border-bottom: none;
+                    border-right: 1px solid $footer-border-color;
+                    display: block;
+                    padding: 0 17px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Accessibility Utils
+*
+* WebAIM Techniques: http://webaim.org/techniques/css/invisiblecontent/
+*/
+
+// Hides elements off screen and from screen readers (nobody will see/hear this content)
+// Also use the HTML5 hidden attribute: ex: <a href="http://url" hidden></a>
+// HTML5 hidden attritbute: http://www.w3.org/TR/html5/editing.html#the-hidden-attribute
+.a11y-hide-all {
+    display: none !important;
+}
+
+// Hide elements off screen but available to screen readers
+// Prerequisite: Parent container MUST be position: relative;
+.a11y-hide-visually {
+    height: 1px;
+    left: -99999px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}

@@ -1,0 +1,93 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Custom Links w/ icons and text
+*
+*/
+
+
+.tool-holder {
+    padding:32px 20px;
+    border-left:0;
+	border-top:1px solid $content-custom-links-border-color;
+
+    & > a {
+        display: block;
+    }
+
+    &:first-child {
+            border-left:0;
+            border-top:0;
+    }
+
+    p {
+		color:$body-text-color;
+        line-height:24px;
+        margin:22px 0 26px 0;
+        font-size:14px;
+        min-height: 75px;
+    }
+
+    i {
+    	color: $custom-links-icon-color;
+    }
+
+    i.custom-links-blocker {
+    	color:$custom-links-blocker;
+    	font-size:88px;
+    	margin-top:4px;
+    }
+
+    .custom-link-text {
+		color:$custom-links-text-color;
+    	font-size:17px;
+    	font-weight:700;
+    }
+
+    .custom-link-text i {
+		color:$custom-links-text-color;
+    	font-size:24px;
+    	margin-left:5px;
+    	position:relative;
+    	top:2px;
+    	display:inline-block;
+    }
+
+	&:hover i {
+    	color:$custom-links-text-color-hover;
+    }
+
+    &:hover i.custom-links-blocker {
+    	color:$custom-links-blocker-hover;
+    }
+
+    &:hover .custom-link-text {
+    	color:$custom-links-text-color-hover;
+    }
+}
+
+.feature-row {
+    margin: 0;
+}
+
+
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+    .tool-holder {
+        border-top:0;
+		 border-left: 1px solid $content-custom-links-border-color;
+        padding:0px 20px;
+
+        &:first-child {
+            border-top:0;
+            border-left:0;
+        }
+    }
+    
+    .feature-row {
+        margin: 50px 0;
+    }
+
+}

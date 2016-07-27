@@ -1,0 +1,166 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Messaging
+*
+*/
+
+.message {
+    line-height: 20px;
+    border:2px solid;
+    padding:17px 40px 15px 50px;
+    font-size:15px;
+    @include border-radius(5px);
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    button.close, a.close {
+        padding:0;
+        margin:0;
+        position:absolute;
+        right:10px;
+        top:10px;
+        display:block;
+        width:24px;
+        height:24px;
+        background: transparent;
+
+        i {
+            margin-top:0;
+            top:0;
+            left:0;
+            line-height:24px;
+            font-size:24px;
+			width: 24px;
+        }
+    }
+
+    i {
+        font-size: 30px;
+        margin:0;
+        padding:0;
+        position:absolute;
+        top:15px;
+        left:15px;
+    }
+
+    p {
+        vertical-align:center;
+        padding:0;
+        font-size:15px;
+        display:inline-block;
+        margin:0 0 10px 0;
+    }
+
+    ul {
+    	font-size:15px;
+    	margin:0 0 20px 18px;
+    }
+}
+
+.message.system {
+    background: $message-system-bg;
+    border-color: $message-system-border-color;
+    color: $message-system-text-color;
+
+    button.close, a.close, p {
+        color: $message-system-text-color;
+    }
+
+    a {
+        color: $message-system-link-color;
+        text-decoration:underline;
+    }
+}
+
+.message.warning {
+    background: $message-warning-bg;
+    border-color: $message-warning-border-color;
+    color: $message-warning-text-color;
+
+    button.close, a.close, p {
+        color: $message-warning-text-color;
+    }
+
+    a {
+        color: $message-warning-link-color;
+        text-decoration:underline;
+    }
+}
+
+.message.success {
+    background: $message-success-bg;
+    border-color: $message-success-border-color;
+    color: $message-success-text-color;
+
+    button.close, a.close, p {
+        color: $message-success-text-color;
+    }
+
+    a {
+        color: $message-success-link-color;
+        text-decoration:underline;
+    }
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .message {
+        padding:35px 40px 17px 95px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        i {
+            font-size: 40px;
+            top:30px;
+            left:40px;
+        }
+    }
+    
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+    
+} /* min-width 880px, medium screens */
+
+// Medium-Large-3 screens
+@media only screen and (min-width: 40em) and (max-width: 60em) {
+    
+} /* min-width 960px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+    
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

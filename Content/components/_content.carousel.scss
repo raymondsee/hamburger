@@ -1,0 +1,238 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Carousel
+*
+*/
+
+
+.carousel {
+
+	h2 {
+		color: $carousel-text-color;
+	}
+
+	>li {
+		background: $secondary-color;
+		padding: 20px 15px 0 15px;
+
+		&.slider-1 {
+			background-color: $slider-1-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-1-color-1), color-stop(100%, $slider-1-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-1-color-1, $slider-1-color-2);
+			background-image: linear-gradient(to right,$slider-1-color-1, $slider-1-color-2);
+		}
+
+		&.slider-2 {
+			background-color: $slider-2-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-2-color-1), color-stop(100%, $slider-2-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-2-color-1, $slider-2-color-2);
+			background-image: linear-gradient(to right, $slider-2-color-1, $slider-2-color-2);
+		}
+
+		&.slider-3 {
+			background-color: $slider-3-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-3-color-1), color-stop(100%, $slider-3-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-3-color-1, $slider-3-color-2);
+			background-image: linear-gradient(to right, $slider-3-color-1, $slider-3-color-2);
+		}
+
+		&.slider-4 {
+			background-color: $slider-4-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-4-color-1), color-stop(100%, $slider-4-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-4-color-1, $slider-4-color-2);
+			background-image: linear-gradient(to right, $slider-4-color-1, $slider-4-color-2);
+		}
+
+		&.slider-5 {
+			background-color: $slider-5-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-5-color-1), color-stop(100%, $slider-5-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-5-color-1, $slider-5-color-2);
+			background-image: linear-gradient(to right, $slider-5-color-1, $slider-5-color-2);
+		}
+
+		&.slider-6 {
+			background-color: $slider-6-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-6-color-1), color-stop(100%, $slider-6-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-6-color-1, $slider-6-color-2);
+			background-image: linear-gradient(to right, $slider-6-color-1, $slider-6-color-2);
+		}
+
+		button, .button {
+			width: 100%;
+		}
+
+		.slider-content {
+			color: $carousel-text-color;
+			h2 {
+				color: $carousel-text-color;
+				line-height:36px;
+			}
+		}
+	}
+	
+	&.static-content {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}   
+}
+
+.outside-carousel {
+    .sign-in-carousel {
+        @include border-radius(0px);
+		background: $button-secondary-color;
+        font-size:  1rem;
+        width: 100%;
+        padding-top: 14px;
+        margin: 0;
+    }
+}
+
+.orbit-slide-number, .orbit-prev, .orbit-next, .orbit-timer {
+    display: none;
+}
+
+.orbit-bullets-container {
+    top: -2em;
+    position: relative;
+    z-index: 90;
+}
+
+.orbit-bullets {
+	margin-bottom: 0px;
+
+	li {
+		display: inline-block;
+		width: 0.75rem;
+		height: 0.75rem;
+		background: transparent;
+		border: 2px solid white;
+		float: none;
+		margin-right: 6px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		position: static;
+
+		&.active {
+			background: white;
+			border: 2x solid white;
+			width: 0.75rem;
+			height: 0.75rem;
+		}
+	}
+}
+
+.carousel-row {
+    padding: 0;
+    color: white;
+    
+    button, .button {
+        margin-right: 10px;
+        width: 100%;
+    }
+    
+    .custom-button {
+		background: $primary-color;
+		&:hover, &:focus, &:active {
+			border-color: white;
+			border-radius: 3px;
+			color: $primary-color;
+			background: white;
+		}
+    }
+        
+    img {
+        margin-top: 60px;
+    }
+    
+    ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        li {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            padding-left: 10px;
+        }
+    }
+
+	.top-button-group {
+		padding-top: 10px;
+	}
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+    .carousel {
+
+		>li {
+			padding: 4.25rem 0 0 0;
+
+			button, .button {
+				width: auto;
+			}
+
+			.slider-content {
+				color: $carousel-text-color;
+				h2 {
+					font-weight: 300;
+					line-height: 60px;
+				}
+			}
+		}
+
+	    .slider-1 {
+	        .slider-content {
+
+                h2 {
+                    width: 400px;
+                }
+
+	            button {
+	                margin: 2.75rem 0 0 0;
+	                padding-top: 16px;
+	            }
+	        }
+	    }
+
+	    .sign-in-carousel {
+	        margin: 2.75rem 0 0 0;
+	        @include border-radius(3px);
+	        padding-top: 16px;
+	    }
+
+	    
+	}
+
+
+	.orbit-slide-number, .orbit-prev, .orbit-next, .orbit-timer {
+        display:block;
+	}
+
+	.orbit-container .orbit-next {
+        right: 1rem;
+	}
+
+	.orbit-container .orbit-prev {
+        left: 1rem;
+	}
+        
+    .carousel-row {
+        padding: 0;
+        button, .button {
+            margin-right: 10px;
+            width: auto;
+        }
+
+		ul {
+			margin-top: 30px;
+			margin-bottom: 50px;
+		}
+    }
+	
+}
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+}

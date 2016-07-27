@@ -1,0 +1,16 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Content Icon
+*
+*/
+
+i {
+	&.warning {
+		color: $warning;
+	}
+
+	&.success {
+		color: $success;
+	}
+}

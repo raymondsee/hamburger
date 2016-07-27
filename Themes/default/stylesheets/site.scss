@@ -1,0 +1,55 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* All components include below contain Skin CSS (e.g. color, background color, shadow, font family) are located under Themes/default/styleguide/*.scss
+* The corresponding components which contain platform CSS, e.g. dimention, height, width, padding, margin, position, etc. are located under Content/components/*.scss
+*
+*/
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// DPS Theme Components
+
+@import
+  "../../../Content/mixins",
+  "config",
+  "colors",
+  "utils",
+  "fonts",
+  "body",
+  "typography",
+  "tooltips",
+  "form.controls",
+  "form.checkboxes",
+  "form.radiobuttons",
+  "form.buttons",
+  "header.card.program",
+  "header.signin.out",
+  "header.navigation.menu", 
+  "header.full",
+  "header.skip.to.link",
+  "content.carousel",
+  "content.text.bg.img", 
+  "content.custom.buttons",
+  "content.custom.links",
+  "content.messaging",
+  "content.pagination",
+  "content.modal",
+  "content.faqs",
+  "content.data.rows",
+  "content.box",
+  "content.balance",
+  "content.language.selector",
+  "content.icon",
+  "content.progress",
+  "content.thumbnails", 
+  "content.check", 
+  "terms.conditions",
+  "footer",
+  "statement",
+  "standalone",
+  "home",
+  "jquery.ui.datepicker",
+  "custom",
+  "form.datepickers";

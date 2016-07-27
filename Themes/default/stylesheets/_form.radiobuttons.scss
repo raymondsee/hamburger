@@ -1,0 +1,13 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Checkboxes
+*
+*/
+
+input[type=radio] {
+
+	&.error {
+		outline:2px solid $warning-color;
+	}
+}

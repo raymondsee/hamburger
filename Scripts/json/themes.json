@@ -1,0 +1,26 @@
+﻿{
+	"themes": {
+		"default": {
+			"id": 1,
+			"value": "default",
+			"label": "Default",
+			"cssUri": "Themes/default/stylesheets/site.css",
+			"imageUri": "Themes/default/images/"
+		},
+		"direct-express": {
+			"id": 2,
+			"value": "direct-express",
+			"label": "Direct Express",
+			"cssUri": "Themes/direct-express/stylesheets/site.css",
+			"imageUri": "Themes/direct-express/images/"
+		},
+		"bank-of-america": {
+			"id": 3,
+			"value": "boa",
+			"label": "Bank of America",
+			"cssUri": "Themes/bank-of-america/stylesheets/site.css",
+			"imageUri": "Themes/bank-of-america/images/"
+		}
+
+	}
+}

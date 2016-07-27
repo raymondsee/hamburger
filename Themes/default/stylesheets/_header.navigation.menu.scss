@@ -1,0 +1,77 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Navigation Menu
+*
+*/
+
+// Navigation Menu
+.top-bar-section .dropdown li.title span a {
+	color: $primary-color;
+	background: $navigation-back-link-background-color;
+}
+
+// The hamburger menu icon
+.top-bar {
+	.toggle-topbar {
+		&.menu-icon {
+			a {
+				background: $menu-icon-bg-color;
+
+				&::after {
+					-webkit-box-shadow: -8px 10px 0 1px $menu-icon-color,
+										-8px 16px 0 1px $menu-icon-color,
+										-8px 22px 0 1px $menu-icon-color;
+              
+					box-shadow: -8px 10px 0 1px $menu-icon-color,
+								-8px 16px 0 1px $menu-icon-color,
+								-8px 22px 0 1px $menu-icon-color;
+				}
+			}
+		}
+	}
+}
+
+.top-bar-section ul li {
+	a.selected {
+		color: $navigation-link-selected;
+	}
+
+	&> a {
+		color: $navigation-link;
+	}
+
+	&:hover > a {
+		color: $navigation-link-over;
+		background: $navigation-link-mobile-hover-background-color
+	}
+}
+
+.top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+	color: $navigation-link-over;
+}
+
+.top-bar-section ul li > a {
+	background: $navigation-link-mobile-background-color;
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .top-bar.tab-style {
+        .top-bar-section {
+            ul {
+                border-bottom: 1px solid $navigation-tab-style-border-color;
+                @include shadow-inset(0px, -22px, 22px, -28px, rgba(0, 0, 0, .4));
+
+                li {
+                    a.selected {
+                        background: white;
+                        border: 1px solid $navigation-tab-style-border-color;
+                        border-bottom-color: white;
+                        @include box-shadow(0px, -5px, 32px, -16px, rgba(0, 0, 0, .4));
+                    }
+                }
+            }
+        }
+    }
+} /* min-width 641px, medium screens */

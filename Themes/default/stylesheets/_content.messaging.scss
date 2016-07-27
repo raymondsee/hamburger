@@ -1,0 +1,48 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Messaging
+*
+*/
+
+.message.system {
+    background: $message-system-bg;
+    border-color: $message-system-border-color;
+    color: $message-system-text-color;
+
+    button.close, a.close, p {
+        color: $message-system-text-color;
+    }
+
+    a {
+        color: $message-system-link-color;
+    }
+}
+
+.message.warning {
+    background: $message-warning-bg;
+    border-color: $message-warning-border-color;
+    color: $message-warning-text-color;
+
+    button.close, a.close, p {
+        color: $message-warning-text-color;
+    }
+
+    a {
+        color: $message-warning-link-color;
+    }
+}
+
+.message.success {
+    background: $message-success-bg;
+    border-color: $message-success-border-color;
+    color: $message-success-text-color;
+
+    button.close, a.close, p {
+        color: $message-success-text-color;
+    }
+
+    a {
+        color: $message-success-link-color;
+    }
+}

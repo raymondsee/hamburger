@@ -1,0 +1,57 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Pagination
+*
+*/
+
+@mixin pagination-link($fontsize) {
+    a {
+        background: none;
+        color: $pagination-active-link-color;
+        font-size: $fontsize;
+        text-decoration: none;
+
+        &:hover {
+            background: none;
+            color: $pagination-hover-link-color;
+            text-decoration: underline;
+        }
+
+		i {
+			color: $link-icon-color;
+		}
+    }
+
+    .current a, .current a:hover, .unavailable a, , .unavailable a:hover {
+        background: none;
+        color: $pagination-text-color;
+        cursor: default;
+        text-decoration: none;
+    }
+}
+
+.pagination {}
+
+.pagination.simple {
+    color: $pagination-text-color;
+    @include pagination-link(18px);
+}
+
+.pagination.advanced {
+    color: $pagination-text-color;
+    @include pagination-link(18px);
+}
+
+.pagination.viewby {
+    @include pagination-link(14px);
+
+    .view {
+        border-right: 2px solid $pagination-text-color;
+    }
+}
+
+ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+	background: $primary-color;
+	color: white;
+}

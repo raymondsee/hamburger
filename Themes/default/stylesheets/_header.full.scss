@@ -1,0 +1,221 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Navigation Menu
+*
+*/
+
+.header-container {
+    background: white;
+    @include box-shadow (0px, 0px, 12px, 0px, rgba(0, 0, 0, .4));
+    border-bottom: 1px solid $header-container-border-color;
+}
+
+.lang-selector-top-row {
+	background: $body-bg-color;
+
+	#lang-label-top {
+		border-right: 1px solid $body-text-color;
+	}
+
+	.dropdown {
+        i {
+            color: $footer-icon-color;
+        }
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+    .header-container {
+		@if $sticky-header == true {
+			left: 0;
+			position: fixed;
+			top: 0;
+			z-index: 94;
+		}
+    }
+
+    .header-signinbox {
+		@if $header-left-to-right != true {
+			float: left; /* Right to left CSS */
+		} @else {
+			float: right; /* Left to right CSS */
+		}
+    }
+
+    .brand-container {
+        .logo-wrapper {
+            height: $brand-container-height;	
+        }
+
+        .program-wrapper {
+			@if $header-left-to-right == true {
+				text-align: left; // Left to Right CSS
+			} @else { // Right to Left CSS
+				right: 0;
+				position: absolute;
+				float: right;
+				text-align: right; 
+			}
+
+            .header-card-program {
+				height: $brand-container-height; 
+				@if $header-left-to-right == true {
+					text-align: left; // Left to Right CSS
+				} @else {
+					text-align: right; // Right to Left CSS
+				}
+            }
+        }
+    }
+
+    .sign-in-out-container {
+		// Right to left CSS
+		p.header-signout {
+			@if $header-left-to-right != true { 
+				float: left; /* Right to left CSS */
+				text-align: left; /* Right to left CSS */
+			} @else {
+				float: right; /* Left to right CSS */
+				text-align: right; /* Left to right CSS */
+			}
+		}
+    }
+
+	/*
+	* Right to Left CSS
+	*/
+    .custom-medium-push-2 {
+		@if $header-left-to-right != true {
+			left: 16.66667%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+	}
+
+	.custom-medium-pull-10 {
+		@if $header-left-to-right != true {
+			left: auto; /* Right to left CSS */
+			right: 83.33333%; /* Right to left CSS */
+		}
+	}
+
+    .custom-medium-push-3 {
+		@if $header-left-to-right != true {
+			left: 25%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-medium-pull-9 {
+		@if $header-left-to-right != true {
+			left: auto; /* Right to left CSS */
+			right: 75%; /* Right to left CSS */
+		}
+    }
+
+	.custom-medium-push-5 {
+		@if $header-left-to-right != true {
+			left: 41.66667%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-medium-pull-7 {
+		@if $header-left-to-right != true {
+			left: auto; /* Right to left CSS */
+			right: 58.33333%; /* Right to left CSS */
+		}
+    }
+
+	.custom-medium-push-7 {
+		@if $header-left-to-right != true {
+			right: auto; /* Right to left CSS */
+			left: 58.33333%; /* Right to left CSS */
+		}
+	}
+
+	.custom-medium-pull-5 {
+		@if $header-left-to-right != true {
+			left: auto; /* Right to left CSS */
+			right: 41.66667%; /* Right to left CSS */
+		}
+	}
+
+	.custom-medium-push-8 {
+		@if $header-left-to-right != true {
+			right: auto; /* Right to left CSS */
+			left: 66.66667%; /* Right to left CSS */
+		}
+	}
+
+	.custom-medium-pull-4 {
+		@if $header-left-to-right != true {
+			left: auto; /* Right to left CSS */
+			right: 33.33333%; /* Right to left CSS */
+		}
+	}
+} /* min-width 641px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+	/*
+	* Right to Left CSS
+	*/
+	.custom-large-push-8 {
+		@if $header-left-to-right != true {
+			left: 66.66667%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-large-pull-4 {
+		@if $header-left-to-right != true {
+			right: 33.33333%; /* Right to left CSS */
+			left: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-large-push-4 {
+		@if $header-left-to-right != true {
+			left: 33.33333%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-large-pull-8 {
+		@if $header-left-to-right != true {
+			right: 66.66667%; /* Right to left CSS */
+			left: auto; /* Right to left CSS */
+		}
+    }
+
+	.custom-large-push-5 {
+		@if $header-left-to-right != true {
+			left: 41.66667%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-large-pull-7 {
+		@if $header-left-to-right != true {
+			right: 58.33333%; /* Right to left CSS */
+			left: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-large-push-2 {
+		@if $header-left-to-right != true {
+			left: 16.6667%; /* Right to left CSS */
+			right: auto; /* Right to left CSS */
+		}
+    }
+
+    .custom-large-pull-10 {
+		@if $header-left-to-right != true {
+			left: auto; /* Right to left CSS */
+			right: 83.3333%; /* Right to left CSS */
+		}
+    }
+} /* min-width 1025px, large screens */

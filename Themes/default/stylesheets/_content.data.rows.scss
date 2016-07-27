@@ -1,0 +1,34 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Data Rows
+*
+*/
+
+.data-rows {
+    button {
+        background-color: $data-row-button-background-color;
+
+        &:hover, &:focus {
+            background-color: $data-row-button-hover-color;
+        }
+
+        i { color: $data-row-button-icon-color; }
+    }
+
+    .data-row-odd {
+        background: $data-row-odd-background-color;
+    }
+
+    .data-row-even {
+        border-top: 1px dashed $data-row-even-border-color;
+        border-bottom: 1px dashed $data-row-even-border-color;
+        background: $data-row-even-background-color;
+    }
+
+    label {
+        &.bold {
+            color: $body-text-color;
+        }
+    } 
+}

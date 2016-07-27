@@ -1,0 +1,23 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    text with bg image
+*
+*/
+
+.text-with-bg-image {
+    background-size:cover;
+    padding:20px;
+    height:600px;
+
+    .title {
+		color:$text-with-bg-img-color;
+        font-size:24px;
+        margin:0 0 10px 0;
+    }
+
+    p {
+		color:$text-with-bg-img-color;
+        margin:15px 0;
+    }
+}

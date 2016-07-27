@@ -1,0 +1,224 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Colors
+*
+* IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
+* Good: $body-text-color: #666; Bad: $grey-text: #666;
+*/
+
+// Visa Brand Colors - This is only used for the Default Visa Theme
+//@import "visa.brand";
+
+// General Colors
+$body-text-color: $tertiary-color;
+$body-bg-color: darken(#fff, 3%);
+
+$box-bg-color: #fff;
+
+// Header 
+$header-signinbox-bg-color: darken(#fff, 5.5%);
+$header-card-program-seperator-color: #CCC;
+$header-container-border-color: #CCC;
+$header-skip-to-link-background-color: #f1f1f2;
+
+$sign-in-widget-link-color: #1A1F71;
+
+// Hamburger toggle button (menu icon on mobile device)
+$menu-icon-bg-color: #CCC;
+$menu-icon-color: #FFF;
+
+// Feature 
+$feature-row-bg-color: darken(#fff, 5.5%);
+$feature-list-divider-color: $tertiary-color;
+$feature-text-box-divider-color: #ccc;
+
+// Card Program Name Colors
+$card-program-name-color: $primary-color;
+
+// Navigation Menu Colors
+$navigation-link: $primary-color;
+$navigation-link-over: #EF8400;
+$navigation-link-selected: #75787b;
+$navigation-border-color: #959595;
+$navigation-tab-style-border-color: #DDD;
+$navigation-back-link-background-color: #DDD;
+
+// Navigation Menu Colors (Mobile View Hamburger Menu Color)
+$navigation-link-mobile-background-color: #CCC;
+$navigation-link-mobile-hover-background-color: #EEE;
+
+// Form Controls
+$form-controls-border-color: #999;
+$form-controls-active-border-color: #0050b9;
+$form-controls-error-border-color: $warning-color;
+$form-controls-text-color: $tertiary-color;
+$form-controls-text-error-color: $warning-color;
+
+// Button Colors
+$button-group-border-color: #DDD;
+$button-text-color: white;
+
+$button-primary-color: $primary-color;
+$button-primary-hover-color: #003EA9;
+$button-primary-hover-bottom-border-color: #002e7f;
+$button-primary-pressed-color: #003EA9;
+
+$button-secondary-color: $secondary-color;
+$button-secondary-hover-color: #003EA9;
+$button-secondary-hover-bottom-border-color: #002e7f;
+$button-secondary-pressed-color: #003EA9;
+
+$button-standard-color: #74777A;
+$button-standard-hover-color: #999;
+$button-standard-hover-bottom-border-color: #737373;
+$button-standard-pressed-color: #999;
+
+$button-warning-color: $warning-color;
+$button-warning-hover-color: #e94c4c;
+$button-warning-hover-bottom-border-color: #af3939;
+$button-warning-pressed-color: #e94c4c;
+
+//Text with BG Image
+$text-with-bg-img-color: #fff;
+
+//Large Custom Buttons
+$custom-button-background: #f1f1f2;
+$custom-button-icon-color: #999;
+$custom-button-icon-color-hover: $primary-color;
+$custom-button-text-color: #F7B600;
+$custom-button-text-color-hover: $primary-color;
+$custom-button-border-color: #999;
+$custom-button-border-color-hover: $primary-color;
+
+//Custom Links w/ icons and text
+$custom-links-icon-color: #999;
+$custom-links-icon-color-hover: $primary-color;
+$custom-links-text-color: #F7B600;
+$custom-links-text-color-hover: $primary-color;
+$custom-links-blocker: #fff;
+$custom-links-blocker-hover: #fff;
+
+// Typography
+$typography-h1-color: $primary-color;
+$typography-h2-color: $primary-color;
+$typography-h3-color: $primary-color;
+$typography-h4-color: $primary-color;
+$typography-h5-color: $primary-color;
+$typography-h6-color: $primary-color;
+
+// Links
+$link-color: $primary-color;
+$link-visited-color: $link-color;
+$link-hover-color: #003EA9;
+$link-active-color: $link-color;
+
+//Messaging
+$message-system-bg: #f1f1f2;
+$message-system-border-color: #75787b;
+$message-system-text-color: $tertiary-color;
+$message-system-link-color: #222;
+$message-warning-bg: lighten($warning-color, 45.6%);
+$message-warning-border-color: $warning-color;
+$message-warning-text-color: $warning-color;
+$message-warning-link-color: #990000;
+$message-success-bg: #eff3f0;
+$message-success-border-color: #068011;
+$message-success-text-color: $success-color;
+$message-success-link-color: #003300;
+
+//Icon
+$warning: $warning-color;
+$success: $success-color;
+
+// Tooltips
+$tooltip-icon-color: $icon-color;
+$tooltip-background-color: $primary-color;
+$tooltip-text-color: white;
+
+// Pagination
+$pagination-text-color: $tertiary-color;
+$pagination-active-link-color: $secondary-color;
+$pagination-hover-link-color:  darken(#003EA9, 15%);
+
+// FAQs
+$faqs-back-to-top-active-link-color: #EF8400;
+$faqs-back-to-top-hover-link-color:  darken(#EF8400, 15%);
+
+// Modals
+$modal-background-color: $primary-color;
+$modal-heading-color: $primary-color;
+$modal-close-button-color: #949494;
+
+// Data Rows
+$data-row-button-background-color: $icon-color;
+$data-row-button-hover-color: #F7B600;
+$data-row-button-icon-color: white;
+$data-row-odd-background-color: white;
+$data-row-even-background-color: #f9f9f9;
+$data-row-even-border-color: #75787B;
+
+//Terms and Conditions
+$terms-border-color: #777;
+$terms-background-color: #f1f1f1;
+$terms-text-color: $tertiary-color;
+
+// Footer
+$footer-container-background-color: #fff;
+$footer-background-color: #f9f9f9;
+$footer-border-color: #ddd;
+$footer-link-color: $tertiary-color;
+$footer-link-hover-color: #EF8400;
+$footer-icon-color: $icon-color;
+
+$standalone-page-footer-border-color: #CCC;
+
+
+// Progress Bar colors
+$progress-bar-background: #ccc;
+$progress-bar-default-color: $primary-color;
+$progress-bar-default-text-color: #FFFFFF;
+$progress-bar-alert-text-color: #400000;
+$progress-bar-success-text-color: #003900;
+$progress-bar-secondary-text-color: #000000;
+
+$link-icon-color: $icon-color;
+
+// Content colors
+$content-box-background-color: #FFF;
+$content-custom-links-border-color: #E1E1E1;
+$thumbnail-border-color: #DDD;
+$disabled-link-color: #767676; 
+$form-label-color: #4D4D4D;
+
+// Carousel slider color
+$slider-1-color-1: $primary-color;
+$slider-1-color-2: darken($primary-color, 10%);
+$slider-2-color-1: $secondary-color;
+$slider-2-color-2: darken($secondary-color, 15%);
+$slider-3-color-1: $tertiary-color;
+$slider-3-color-2: darken($tertiary-color, 15%);
+$slider-4-color-1: #fa9b00;
+$slider-4-color-2: #f4ca12;
+$slider-5-color-1: #fa9b00;
+$slider-5-color-2: #f4ca12;
+$slider-6-color-1: #fa9b00;
+$slider-6-color-2: #f4ca12;
+
+// Check check 
+$check-border-color: #CCC;
+$void-check-background-color: #E3F1E4;
+
+//Datepicker color
+$datepicker-thead-background-color: #F5F5F5;
+$datepicker-today-background-color: #EF8400;
+$datepicker-selected-date-background-color: #CCC;
+$datepicker-hover-background-color: #CCC;
+$datepicker-button-border-color: #999;
+$datepicker-grid-border-color: #CCC;
+$datepicker-background-color: #FFF;
+
+//Statement page style 
+$statement-body-background-color: #FFF;
+
+

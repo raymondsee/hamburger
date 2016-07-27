@@ -1,0 +1,26 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Pagination
+*
+*/
+
+.pagination.simple {
+	color: $pagination-text-color;
+    font-weight: 500;
+}
+
+.pagination.advanced {
+	color: $pagination-text-color;
+    font-weight: 500;
+}
+
+.pagination.viewby {
+    font-weight: 500;
+
+    .view {
+        background: none;
+		border-right: 2px solid $pagination-text-color;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,15 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Data Rows
+*
+*/
+
+.data-grid caption {
+	@extend .a11y-hide-visually;
+}
+
+table.stretch {
+    width: 100%;
+}
+

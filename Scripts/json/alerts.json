@@ -1,0 +1,22 @@
+{
+    "alerts": [
+        {
+            "id": "29cf0380-cf49-4a65-bef4-46889e70fdc5",
+            "title": "Phishing Alert",
+			"url": "../Resource/alerts/phishing.html",
+            "body": "<p>If you receive a suspicious email, it may be part of a fraudulent &quot;phishing&quot; scheme.</p><h2>Reminder:</h2><p>Do not click on any links or reply to the email. Simply delete it.</p><p>To report a suspicious email that uses Bank of America's name, forward the email to <a href='mailto:abuse@bankofamerica.com'>abuse@bankofamerica.com</a> before you delete it.</p>"
+        },
+        {
+            "id": "3b1bec0a-8487-4b13-af0a-e91886c378eb",
+            "title": "System Maintenance",
+			"url": "../Resource/alerts/sys-maintenance.html", 
+            "body": "<p>Oops, transactions are currently not up to date.</p><p>Please try back later.</p>"
+        },
+        {
+            "id": "4af4c70d-366f-428f-bd0f-80127979aaa4",
+            "title": "We Appreciate You",
+			"url": "../Resource/alerts/appreciate.html", 
+            "body": "<p>Thank you for being our customer.</p>"
+        }
+    ]
+}

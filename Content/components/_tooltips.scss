@@ -1,0 +1,44 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Tooltips
+*
+*/
+
+.has-tip, .has-tip:hover, .has-tip:focus {
+    border: none;
+}
+
+.has-tip .fa {
+    color: $tooltip-icon-color;
+}
+
+.tooltip {
+    background: $tooltip-background-color;
+    color: $tooltip-text-color;
+}
+
+button.has-tip {
+	background-color:transparent; 
+	padding:0px; 
+	width: 15px; 
+	height: 20px;
+
+	&.small-tip {
+		font-size: 12px;
+	}
+
+	&.medium-tip {
+		font-size: 14px;
+	}
+
+	&.large-tip {
+		font-size: 16px;
+	}
+
+	&.xlarge-tip {
+		font-size: 24px;
+		width: 22px;
+		height: 24px;
+	}
+}

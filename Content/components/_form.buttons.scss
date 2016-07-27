@@ -1,0 +1,199 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    .buttons
+*
+*/
+
+
+.button.small, .button.large, .button.stretch {
+	color: $button-text-color;
+	@include border-radius(3px);
+	font-size:16px;
+	font-weight:700;
+	line-height:16px;
+	-webkit-transition: background-color 300ms ease-out;
+	-moz-transition: background-color 300ms ease-out;
+	transition: background-color 300ms ease-out;
+
+	&:hover {
+		color: $button-text-color;
+	}
+
+	i {
+		color: $button-text-color;
+	}
+}
+
+.button.primary {
+  background: $button-primary-color;
+
+  &:hover, &:focus {
+    background: $button-primary-hover-color;
+    @include shadow-inset(0px, -8px, 0px, -4px, $button-primary-hover-bottom-border-color);
+  }
+
+  &:active {
+    background: $button-primary-pressed-color;
+    @include shadow-none();
+  }
+}
+
+.button.secondary {
+  background: $button-secondary-color;
+
+  &:hover, &:focus {
+	color: $button-text-color;
+    background: $button-secondary-hover-color;
+    @include shadow-inset(0px, -8px, 0px, -4px, $button-secondary-hover-bottom-border-color);
+  }
+
+  &:active {
+	color: $button-text-color;
+    background: $button-secondary-pressed-color;
+    @include shadow-none();
+  }
+}
+/*
+.button.standard {
+  background: $button-standard-color;
+
+  &:hover, &:focus {
+    background: $button-standard-hover-color;
+    @include shadow-inset(0px, -8px, 0px, -4px, $button-standard-hover-bottom-border-color);
+  }
+
+  &:active {
+    background: $button-standard-pressed-color;
+    @include shadow-none();
+  }
+}
+*/
+.button.warning {
+  background: $button-warning-color;
+
+  &:hover, &:focus {
+    background: $button-warning-hover-color;
+    @include shadow-inset(0px, -8px, 0px, -4px, $button-warning-hover-bottom-border-color);
+  }
+
+  &:active {
+    background: $button-warning-pressed-color;
+    @include shadow-none();
+  }
+}
+
+.button.small {
+	padding:15px 36px 14px;
+}
+
+.button.large {
+  padding:15px 70px 14px;
+}
+
+.button.stretch {
+  padding-top:15px;
+  padding-bottom:14px;
+  width:100%;
+}
+
+.button.small i, .button.large i, .button.stretch i {
+  position:absolute;
+  top:11px;
+  right:10%;
+  font-size:24px;
+  font-weight:700;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button-group {
+	border-top: 1px solid $button-group-border-color;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 10px;
+
+    .button {
+        // TODO Swap position of buttons visually while keeping the tab order
+        display: block;
+        float: none;
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .button.standard {
+
+    }
+}
+
+button.calendar {
+	background: #FFF;
+	@include border-radius(3px);
+	border: 1px solid $datepicker-button-border-color;
+	color:  $tertiary-color;
+	padding: 8px 10px;
+	margin-top: 5px;
+	margin-left: 3px;
+	margin-bottom: 0px;
+
+	&:hover, &:focus {
+		background: $datepicker-hover-background-color;
+		color:  $tertiary-color;
+	}
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .button-group {
+		margin-top: 50px;
+        text-align: right;
+		padding-top: 34px;
+
+        .button {
+          display: inline-block;
+          float: right;
+          margin-left: 10px;
+          width: auto;
+        }
+    }
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+
+} /* min-width 880px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

@@ -1,0 +1,70 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Typography
+*
+*/
+
+body {
+    color: $body-text-color;
+    font-family: $font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family;
+}
+
+h1 {
+    color: $typography-h1-color;
+}
+
+h2 {
+    color: $typography-h2-color;
+}
+
+h3 {
+    color: $typography-h3-color;
+}
+
+h4 {
+    color: $typography-h4-color;
+}
+
+h5 {
+    color: $typography-h5-color;
+}
+
+h6 {
+    color: $typography-h6-color;
+}
+
+p {
+    color: $body-text-color;
+}
+
+small {
+    color: $body-text-color;
+}
+
+a {
+	color: $link-color;
+
+    &:link, &:visited {
+        color: $link-color;
+    }
+
+    &:hover, &:focus {
+        color: $link-hover-color;
+    }
+}
+
+ul, ol {
+
+    li {
+        i { color: $icon-color; }
+    }
+}
+
+ol > li:before {
+    color: $icon-color;
+}

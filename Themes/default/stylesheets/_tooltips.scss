@@ -1,0 +1,19 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Tooltips
+*
+*/
+
+.has-tip .fa {
+    color: $tooltip-icon-color;
+}
+
+.tooltip {
+    background: $tooltip-background-color;
+    color: $tooltip-text-color;
+}
+
+button.has-tip {
+	background-color:transparent;
+}

@@ -1,0 +1,3350 @@
+/**
+* DPS Prepaid Consumer Styles
+* All components include below contain platform CSS, e.g. dimention, height, width, padding, margin, position, etc.
+* The corresponding components which contain Skin CSS (e.g. color, background color, shadow, font family) are located under Themes/default/styleguide/*.scss
+*/
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Colors
+*
+* IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
+* Good: $body-text-color: #666; Bad: $grey-text: #666;
+*/
+/*
+* Tertiary color applys to a few text components on _color.scss.
+* If you need lighter grey for background color or etc., 
+* you will need to create new color variable
+*/
+/**
+* Header elements orientation variable (Left to right or right to left)
+** if true, Left to right: Logo, program name, and signin/signout widget
+** if false, right to left: Signin/Signout widget, program name, and Logo
+*/
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Colors
+*
+* IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
+* Good: $body-text-color: #666; Bad: $grey-text: #666;
+*/
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Accessibility Utils
+*
+* WebAIM Techniques: http://webaim.org/techniques/css/invisiblecontent/
+*/
+.a11y-hide-all {
+  display: none !important; }
+
+.a11y-hide-visually, .data-grid caption {
+  height: 1px;
+  left: -99999px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Utils
+*
+*/
+.clear {
+  clear: both;
+  float: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.padding-left-none {
+  padding-left: 0; }
+
+.padding-right-none {
+  padding-right: 0; }
+
+.align-right {
+  text-align: right; }
+
+.fixed {
+  z-index: 98; }
+
+.font-light {
+  font-weight: 300; }
+
+.margin-top-none {
+  margin-top: 0; }
+
+.margin-bottom-none {
+  margin-bottom: 0; }
+
+.padding-left-none {
+  padding-left: 0; }
+
+.padding-right-none {
+  padding-right: 0; }
+
+.bold {
+  font-weight: 600; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+a.disabled {
+  color: #767676 !important;
+  pointer-events: none;
+  cursor: default !important; }
+  a.disabled:hover {
+    text-decoration: none !important; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.break-word {
+  word-wrap: break-word; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Body
+*
+*/
+body {
+  color: #666666;
+  background: #f7f7f7;
+  font-weight: 400; }
+  body:focus {
+    outline: none; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  body {
+    height: 100%; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Typography
+*
+*/
+body {
+  color: #666666;
+  font-weight: 400; }
+
+button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0;
+  margin: 0;
+  cursor: pointer; }
+
+h1 {
+  color: #1a1f71;
+  font-size: 30px;
+  font-weight: 300; }
+
+h2 {
+  color: #1a1f71;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0; }
+
+h3 {
+  color: #1a1f71;
+  font-size: 18px;
+  font-weight: 400; }
+
+h4 {
+  color: #1a1f71;
+  font-size: 16px;
+  font-weight: 400; }
+
+h5 {
+  color: #1a1f71;
+  font-size: 14px;
+  font-weight: 400; }
+
+h6 {
+  color: #1a1f71;
+  font-size: 12px;
+  font-weight: 400; }
+
+h1, h2 {
+  text-align: center; }
+
+p {
+  color: #666666;
+  font-size: 14px; }
+
+small {
+  color: #666666;
+  font-size: 12px; }
+
+a {
+  color: #1a1f71;
+  text-decoration: underline; }
+  a:link, a:visited {
+    color: #1a1f71;
+    text-decoration: underline; }
+  a:hover, a:focus {
+    color: #003ea9;
+    text-decoration: underline;
+    -webkit-transition: color, 0.5s, ease-in-out;
+    -moz-transition: color, 0.5s, ease-in-out;
+    transition: color, 0.5s, ease-in-out; }
+
+ul, ol {
+  margin-left: 1.5rem; }
+  ul li, ol li {
+    margin-bottom: 5px;
+    font-size: 14px; }
+    ul li i, ol li i {
+      color: #ef8400; }
+
+ol {
+  list-style-type: none;
+  counter-reset: li-counter; }
+  ol li {
+    position: relative;
+    padding-left: 0.5em; }
+
+ol > li:before {
+  position: absolute;
+  color: #ef8400;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  left: -1em;
+  text-align: right; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  h1, h2 {
+    text-align: left; }
+
+  h1 {
+    font-size: 48px; }
+
+  h2 {
+    font-size: 36px; }
+
+  h3 {
+    font-size: 30px; }
+
+  h4 {
+    font-size: 24px; }
+
+  h5 {
+    font-size: 18px; }
+
+  h6 {
+    font-size: 16px; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Tooltips
+*
+*/
+.has-tip, .has-tip:hover, .has-tip:focus {
+  border: none; }
+
+.has-tip .fa {
+  color: #ef8400; }
+
+.tooltip {
+  background: #1a1f71;
+  color: white; }
+
+button.has-tip {
+  background-color: transparent;
+  padding: 0px;
+  width: 15px;
+  height: 20px; }
+  button.has-tip.small-tip {
+    font-size: 12px; }
+  button.has-tip.medium-tip {
+    font-size: 14px; }
+  button.has-tip.large-tip {
+    font-size: 16px; }
+  button.has-tip.xlarge-tip {
+    font-size: 24px;
+    width: 22px;
+    height: 24px; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Form Controls
+*
+*/
+.input-group-addon {
+  position: absolute;
+  left: 20px;
+  top: 15px; }
+  .input-group-addon i {
+    color: #666666;
+    font-size: 14px; }
+  .input-group-addon + input {
+    padding-left: 25px; }
+
+label, .form-label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #4d4d4d;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.5; }
+  label a:link, .form-label a:link {
+    text-decoration: underline; }
+
+span.form-read-only {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  line-height: 1.5;
+  margin-top: 10px; }
+
+.form-control {
+  line-height: 19px;
+  display: inline-block; }
+
+p.form-control {
+  margin-top: 10px; }
+
+.form-row {
+  margin-bottom: 10px !important; }
+
+.adjacent-action {
+  display: block;
+  margin: 10px 0; }
+  .adjacent-action a {
+    font-size: 13px;
+    text-decoration: underline; }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid #999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #666666;
+  display: inline-block;
+  margin: 5px 0 0 0;
+  -moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  padding-top: 6px;
+  padding-bottom: 6px; }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="time"]:focus,
+  input[type="url"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 2px solid #0050b9;
+    box-shadow: none; }
+  input[type="text"].error, input[type="text"].input-validation-error,
+  input[type="password"].error,
+  input[type="password"].input-validation-error,
+  input[type="date"].error,
+  input[type="date"].input-validation-error,
+  input[type="datetime"].error,
+  input[type="datetime"].input-validation-error,
+  input[type="datetime-local"].error,
+  input[type="datetime-local"].input-validation-error,
+  input[type="month"].error,
+  input[type="month"].input-validation-error,
+  input[type="week"].error,
+  input[type="week"].input-validation-error,
+  input[type="email"].error,
+  input[type="email"].input-validation-error,
+  input[type="number"].error,
+  input[type="number"].input-validation-error,
+  input[type="search"].error,
+  input[type="search"].input-validation-error,
+  input[type="tel"].error,
+  input[type="tel"].input-validation-error,
+  input[type="time"].error,
+  input[type="time"].input-validation-error,
+  input[type="url"].error,
+  input[type="url"].input-validation-error,
+  textarea.error,
+  textarea.input-validation-error,
+  select.error,
+  select.input-validation-error {
+    border: 2px solid #cc3333;
+    color: #cc3333; }
+  input[type="text"].stretch,
+  input[type="password"].stretch,
+  input[type="date"].stretch,
+  input[type="datetime"].stretch,
+  input[type="datetime-local"].stretch,
+  input[type="month"].stretch,
+  input[type="week"].stretch,
+  input[type="email"].stretch,
+  input[type="number"].stretch,
+  input[type="search"].stretch,
+  input[type="tel"].stretch,
+  input[type="time"].stretch,
+  input[type="url"].stretch,
+  textarea.stretch,
+  select.stretch {
+    display: block;
+    width: 100%; }
+
+select {
+  padding-right: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+  select.error, select.input-validation-error {
+    color: #666666; }
+
+.form-control-required {
+  position: relative; }
+  .form-control-required input[type="text"],
+  .form-control-required input[type="password"],
+  .form-control-required input[type="date"],
+  .form-control-required input[type="datetime"],
+  .form-control-required input[type="datetime-local"],
+  .form-control-required input[type="month"],
+  .form-control-required input[type="week"],
+  .form-control-required input[type="email"],
+  .form-control-required input[type="number"],
+  .form-control-required input[type="search"],
+  .form-control-required input[type="tel"],
+  .form-control-required input[type="time"],
+  .form-control-required input[type="url"],
+  .form-control-required textarea {
+    padding-right: 26px; }
+  .form-control-required .fa.required {
+    color: #666666;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .form-control-required .fa.required.error, .form-control-required .fa.required.input-validation-error {
+      color: #cc3333; }
+
+.form-textarea {
+  min-height: 100px; }
+
+input[disabled] + label,
+textarea[disabled] + label,
+select[disabled] + label {
+  color: #999999; }
+
+.required {
+  color: #cc3333; }
+
+.helper.text {
+  background: transparent;
+  color: #666666;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.2em;
+  margin: 5px 0 15px;
+  padding: 0;
+  display: block; }
+  .helper.text.east {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    line-height: 1.0; }
+
+.error.text {
+  background: transparent;
+  color: #cc3333;
+  display: block;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin: 5px 0 5px;
+  padding: 0; }
+
+fieldset {
+  padding: 0 1.25rem 1.25rem;
+  margin: 16px 0 0 0; }
+  fieldset label {
+    margin-top: 16px; }
+  fieldset.error {
+    border: 2px solid #cc3333; }
+    fieldset.error label {
+      color: #4d4d4d; }
+
+.error.text + .helper.text {
+  display: none; }
+
+.input-group {
+  margin: 0 0 16px 0; }
+
+.input-group input[type="checkbox"], .input-group input[type="radio"] {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  vertical-align: top; }
+.input-group label {
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  width: 80%; }
+  .input-group label span.has-tip {
+    margin-left: 7px; }
+.input-group .error {
+  margin-bottom: 16px;
+  font-weight: normal; }
+
+label.sub-title-inline-control {
+  margin-top: 28px; }
+
+select.sub-title-inline-control {
+  margin-top: 18px; }
+
+.lt-ie9 select {
+  padding-right: 0px; }
+.lt-ie9 .input-group-addon {
+  left: 20px;
+  top: 10px; }
+  .lt-ie9 .input-group-addon + input[type="text"] {
+    padding-left: 25px; }
+.lt-ie9 input[type="password"] {
+  font-weight: 300;
+  font-size: 14px;
+  height: 36px; }
+
+.lt-ie10 select {
+  background: none; }
+.lt-ie10 input[type="password"] {
+  font-weight: 300;
+  font-size: 14px; }
+
+/*
+ * Fix the IE10 issue on password field, disable the reveal icon or clear password icon on right side of the password input field.
+ * note: if input has class "stretch", the problem comes back, the masked password round dot got cut off
+*/
+input::-ms-reveal, input::-ms-clear {
+  display: none; }
+
+@media only screen {
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea {
+    font-size: 16px; } }
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    width: auto; }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea {
+    font-size: 14px; }
+
+  .helper.text.east {
+    margin-top: 14px;
+    margin-bottom: 0; }
+
+  input[type="text"].tiny {
+    width: 30%;
+    display: block; }
+  input[type="text"].small {
+    width: 40%;
+    display: block; }
+  input[type="text"].medium {
+    width: 60%;
+    display: block; }
+  input[type="text"].large {
+    width: 70%;
+    display: block; }
+  input[type="text"].xlarge {
+    width: 95%;
+    display: block; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Checkboxes
+*
+*/
+input[type=chekbox] {
+  -webkit-appearance: none;
+  background: white;
+  border: 1px solid #999999;
+  vertical-align: middle; }
+
+input[type=checkbox].error, input[type=checkbox].input-validation-error {
+  outline: 2px solid #cc3333; }
+
+fieldset input[type=radio].error {
+  outline: 0px; }
+  fieldset input[type=radio].error:focus {
+    outline: 1px dotted black; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Checkboxes
+*
+*/
+input[type="radio"] {
+  margin: 0;
+  vertical-align: middle; }
+  input[type="radio"]:focus, input[type="radio"]:active {
+    outline: dotted thin; }
+
+.error input[type=radio] {
+  margin: 0; }
+
+input[type=radio].error {
+  outline: 2px solid #cc3333; }
+
+fieldset input[type=radio].error {
+  outline: 0px; }
+  fieldset input[type=radio].error:focus {
+    outline: 1px dotted black; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    .buttons
+*
+*/
+.button.small, .button.large, .button.stretch {
+  color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out; }
+  .button.small:hover, .button.large:hover, .button.stretch:hover {
+    color: white; }
+  .button.small i, .button.large i, .button.stretch i {
+    color: white; }
+
+.button.primary {
+  background: #1a1f71; }
+  .button.primary:hover, .button.primary:focus {
+    background: #003ea9;
+    -moz-box-shadow: inset 0px -8px 0px -4px #002e7f;
+    -webkit-box-shadow: inset 0px -8px 0px -4px #002e7f;
+    box-shadow: inset 0px -8px 0px -4px #002e7f; }
+  .button.primary:active {
+    background: #003ea9;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.button.secondary {
+  background: #1a1f71; }
+  .button.secondary:hover, .button.secondary:focus {
+    color: white;
+    background: #003ea9;
+    -moz-box-shadow: inset 0px -8px 0px -4px #002e7f;
+    -webkit-box-shadow: inset 0px -8px 0px -4px #002e7f;
+    box-shadow: inset 0px -8px 0px -4px #002e7f; }
+  .button.secondary:active {
+    color: white;
+    background: #003ea9;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+/*
+.button.standard {
+  background: $button-standard-color;
+
+  &:hover, &:focus {
+    background: $button-standard-hover-color;
+    @include shadow-inset(0px, -8px, 0px, -4px, $button-standard-hover-bottom-border-color);
+  }
+
+  &:active {
+    background: $button-standard-pressed-color;
+    @include shadow-none();
+  }
+}
+*/
+.button.warning {
+  background: #cc3333; }
+  .button.warning:hover, .button.warning:focus {
+    background: #e94c4c;
+    -moz-box-shadow: inset 0px -8px 0px -4px #af3939;
+    -webkit-box-shadow: inset 0px -8px 0px -4px #af3939;
+    box-shadow: inset 0px -8px 0px -4px #af3939; }
+  .button.warning:active {
+    background: #e94c4c;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.button.small {
+  padding: 15px 36px 14px; }
+
+.button.large {
+  padding: 15px 70px 14px; }
+
+.button.stretch {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  width: 100%; }
+
+.button.small i, .button.large i, .button.stretch i {
+  position: absolute;
+  top: 11px;
+  right: 10%;
+  font-size: 24px;
+  font-weight: 700; }
+
+a.button {
+  text-decoration: none; }
+
+.button-group {
+  border-top: 1px solid #dddddd;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px; }
+  .button-group .button {
+    display: block;
+    float: none;
+    margin-left: 0;
+    position: relative;
+    width: 100%; }
+
+button.calendar {
+  background: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #666666;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-bottom: 0px; }
+  button.calendar:hover, button.calendar:focus {
+    background: #cccccc;
+    color: #666666; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .button-group {
+    margin-top: 50px;
+    text-align: right;
+    padding-top: 34px; }
+    .button-group .button {
+      display: inline-block;
+      float: right;
+      margin-left: 10px;
+      width: auto; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Card Program
+*
+*/
+.header-card-program {
+  color: #1a1f71;
+  display: inline-block;
+  font-weight: 300;
+  width: 100%;
+  text-align: center; }
+  .header-card-program.seperator {
+    border-left: 1px solid #cccccc;
+    padding-left: 25px; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .header-card-program {
+    text-align: left; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Sign In
+*
+*/
+@media only screen {
+  .header-signinbox {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #f1f1f1;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%; }
+    .header-signinbox .row, .header-signinbox .columns {
+      padding: 0;
+      margin: 0; }
+    .header-signinbox .input-button-spacing {
+      padding-right: 15px; }
+    .header-signinbox label {
+      font-weight: bold;
+      color: #666666;
+      font-size: 12px;
+      text-align: left;
+      margin: 0 0 5px 0; }
+    .header-signinbox input[type=text] {
+      height: 27px;
+      margin: 0 0 9px 0;
+      padding: 4px; }
+    .header-signinbox .button, .header-signinbox .button:hover, .header-signinbox .button:active, .header-signinbox .button:focus {
+      color: white;
+      display: inline-block;
+      font-size: 12px;
+      margin: 0 0 9px 0;
+      padding: 6px 16px; }
+    .header-signinbox input[type=checkbox] {
+      margin: 0;
+      /* & + label span {
+          margin-right: 10px;
+      } */ }
+    .header-signinbox input[type=checkbox] + label {
+      font-size: 11px;
+      font-weight: 400;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 0; }
+    .header-signinbox a {
+      color: #1a1f71;
+      font-size: 11px;
+      text-decoration: none; }
+      .header-signinbox a:hover {
+        text-decoration: underline; }
+      .header-signinbox a:visited {
+        color: #1a1f71; }
+
+  .header-signout a {
+    color: #1a1f71;
+    font-size: 12px;
+    text-decoration: none; }
+    .header-signout a:hover {
+      text-decoration: underline; }
+    .header-signout a:visited {
+      color: #1a1f71; }
+  .header-signout i {
+    color: #ef8400; } }
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .header-signinbox {
+    margin: 0;
+    max-width: 320px; }
+    .header-signinbox input[type=checkbox] + label {
+      font-size: 12px; }
+
+  .lt-ie9 .header-signinbox .row {
+    padding: 0;
+    margin: 0; } }
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .header-signinbox .button {
+    padding-left: 4px;
+    padding-right: 4px; } }
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 1025px, large screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Navigation Menu
+*
+*/
+.top-bar-section .dropdown li.title span a {
+  color: #1a1f71;
+  line-height: 27.5px;
+  display: block;
+  background: #dddddd;
+  font-size: 14px; }
+
+.top-bar .toggle-topbar.menu-icon a {
+  background: #cccccc; }
+  .top-bar .toggle-topbar.menu-icon a::after {
+    -webkit-box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
+    box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white; }
+
+.top-bar-section ul li a.selected {
+  color: #75787b; }
+.top-bar-section ul li > a {
+  color: #1a1f71; }
+.top-bar-section ul li:hover > a {
+  color: #ef8400;
+  background: #eeeeee; }
+
+.top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+  color: #ef8400; }
+
+.top-bar-section ul li > a {
+  background: #cccccc; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .top-bar.tab-style {
+    border: none;
+    box-shadow: none; }
+    .top-bar.tab-style .top-bar-section ul {
+      margin: 0px;
+      border-bottom: 1px solid #dddddd;
+      width: 100%;
+      -moz-box-shadow: inset 0px -22px 22px -28px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: inset 0px -22px 22px -28px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0px -22px 22px -28px rgba(0, 0, 0, 0.4); }
+      .top-bar.tab-style .top-bar-section ul li {
+        margin-bottom: -1px; }
+        .top-bar.tab-style .top-bar-section ul li a.selected {
+          border-radius: 3px 3px 0 0;
+          background: white;
+          border: 1px solid #dddddd;
+          border-bottom-color: white;
+          border-radius: 3px 3px 0 0;
+          box-shadow: 0px, -5px, 32px, -16px, rgba(0, 0, 0, 0.4); }
+    .top-bar.tab-style .top-bar-section > ul > li > a:hover, .top-bar.tab-style .top-bar-section > ul > li > a:focus {
+      outline: none; }
+
+  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+    line-height: 0.4;
+    right: -5px; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Header Navigation Menu
+*
+*/
+.header-container {
+  background: white;
+  box-shadow: 0px, 0px, 12px, 0px, rgba(0, 0, 0, 0.4);
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0px;
+  z-index: 95; }
+
+.header-signinbox {
+  display: inline-block;
+  margin-bottom: 5px; }
+  .header-signinbox.stretch {
+    max-width: 100%; }
+
+.top-bar {
+  margin-top: 10px;
+  height: 65px; }
+  .top-bar .toggle-topbar.menu-icon {
+    top: 16px; }
+  .top-bar .name {
+    height: auto;
+    padding-right: 40px; }
+
+.lang-selector-top-row {
+  padding: 10px 0px;
+  background: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 13px; }
+  .lang-selector-top-row #lang-label-top {
+    display: inline-block;
+    border-right: 1px solid #666666;
+    padding-right: 10px; }
+  .lang-selector-top-row .dropdown {
+    margin-left: 10px; }
+    .lang-selector-top-row .dropdown i {
+      color: #ef8400; }
+
+.sign-in-out-container.show-for-medium-up {
+  padding-left: 0; }
+.sign-in-out-container .header-signout {
+  font-size: 12px; }
+  .sign-in-out-container .header-signout i {
+    font-size: 12px; }
+.sign-in-out-container .forgot-username {
+  text-align: left; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    height: auto; }
+
+  .header-container {
+    width: 100%;
+    padding-bottom: 0px; }
+
+  .brand-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0; }
+    .brand-container .logo-wrapper {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      text-align: right; }
+      .brand-container .logo-wrapper img.header-logo {
+        width: 100%; }
+    .brand-container .program-wrapper .header-card-program {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left; }
+
+  .sign-in-out-container {
+    margin-top: 12px;
+    margin-bottom: 12px; }
+
+  .top-bar .header-card-program {
+    display: none; }
+
+  .header-signinbox {
+    margin-bottom: 0px; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+@media only screen and (min-width: 64.063em) {
+  .sign-in-out-container .header-signout a {
+    font-size: 14px; }
+  .sign-in-out-container .header-signout i {
+    font-size: 14px; }
+  .sign-in-out-container .forgot-username {
+    text-align: right; } }
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Skip To Content Link
+*
+*/
+.skip-to {
+  background: #f1f1f2;
+  display: block;
+  line-height: 3em;
+  margin: 0;
+  text-align: center;
+  height: 1px;
+  left: -99999px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
+  .skip-to:focus {
+    height: auto;
+    left: auto;
+    overflow: hidden;
+    outline: 1px dotted black !important;
+    position: relative;
+    top: auto;
+    width: auto; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Carousel
+*
+*/
+.carousel h2 {
+  color: white; }
+.carousel > li {
+  background: #1a1f71;
+  padding: 20px 15px 0 15px; }
+  .carousel > li.slider-1 {
+    background-color: #1a1f71;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a1f71), color-stop(100%, #101448));
+    background-image: -webkit-linear-gradient(left, #1a1f71, #101448);
+    background-image: linear, to right, #1a1f71, #101448; }
+  .carousel > li.slider-2 {
+    background-color: #1a1f71;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1a1f71), color-stop(100%, #0c0e33));
+    background-image: -webkit-linear-gradient(left, #1a1f71, #0c0e33);
+    background-image: linear, to right, #1a1f71, #0c0e33; }
+  .carousel > li.slider-3 {
+    background-color: #666666;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666666), color-stop(100%, #404040));
+    background-image: -webkit-linear-gradient(left, #666666, #404040);
+    background-image: linear, to right, #666666, #404040; }
+  .carousel > li.slider-4 {
+    background-color: #fa9b00;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa9b00), color-stop(100%, #f4ca12));
+    background-image: -webkit-linear-gradient(left, #fa9b00, #f4ca12);
+    background-image: linear, to right, #fa9b00, #f4ca12; }
+  .carousel > li.slider-5 {
+    background-color: #fa9b00;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa9b00), color-stop(100%, #f4ca12));
+    background-image: -webkit-linear-gradient(left, #fa9b00, #f4ca12);
+    background-image: linear, to right, #fa9b00, #f4ca12; }
+  .carousel > li.slider-6 {
+    background-color: #fa9b00;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa9b00), color-stop(100%, #f4ca12));
+    background-image: -webkit-linear-gradient(left, #fa9b00, #f4ca12);
+    background-image: linear, to right, #fa9b00, #f4ca12; }
+  .carousel > li button, .carousel > li .button {
+    width: 100%; }
+  .carousel > li .slider-content {
+    color: white; }
+    .carousel > li .slider-content h2 {
+      color: white;
+      line-height: 36px; }
+.carousel.static-content {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.outside-carousel .sign-in-carousel {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background: #1a1f71;
+  font-size: 1rem;
+  width: 100%;
+  padding-top: 14px;
+  margin: 0; }
+
+.orbit-slide-number, .orbit-prev, .orbit-next, .orbit-timer {
+  display: none; }
+
+.orbit-bullets-container {
+  top: -2em;
+  position: relative;
+  z-index: 90; }
+
+.orbit-bullets {
+  margin-bottom: 0px; }
+  .orbit-bullets li {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: transparent;
+    border: 2px solid white;
+    float: none;
+    margin-right: 6px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    position: static; }
+    .orbit-bullets li.active {
+      background: white;
+      border: 2x solid white;
+      width: 0.75rem;
+      height: 0.75rem; }
+
+.carousel-row {
+  padding: 0;
+  color: white; }
+  .carousel-row button, .carousel-row .button {
+    margin-right: 10px;
+    width: 100%; }
+  .carousel-row .custom-button {
+    background: #1a1f71; }
+    .carousel-row .custom-button:hover, .carousel-row .custom-button:focus, .carousel-row .custom-button:active {
+      border-color: white;
+      border-radius: 3px;
+      color: #1a1f71;
+      background: white; }
+  .carousel-row img {
+    margin-top: 60px; }
+  .carousel-row ul {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .carousel-row ul li {
+      margin-bottom: 15px;
+      line-height: 1.4;
+      padding-left: 10px; }
+  .carousel-row .top-button-group {
+    padding-top: 10px; }
+
+@media only screen and (min-width: 40.063em) {
+  .carousel > li {
+    padding: 4.25rem 0 0 0; }
+    .carousel > li button, .carousel > li .button {
+      width: auto; }
+    .carousel > li .slider-content {
+      color: white; }
+      .carousel > li .slider-content h2 {
+        font-weight: 300;
+        line-height: 60px; }
+  .carousel .slider-1 .slider-content h2 {
+    width: 400px; }
+  .carousel .slider-1 .slider-content button {
+    margin: 2.75rem 0 0 0;
+    padding-top: 16px; }
+  .carousel .sign-in-carousel {
+    margin: 2.75rem 0 0 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding-top: 16px; }
+
+  .orbit-slide-number, .orbit-prev, .orbit-next, .orbit-timer {
+    display: block; }
+
+  .orbit-container .orbit-next {
+    right: 1rem; }
+
+  .orbit-container .orbit-prev {
+    left: 1rem; }
+
+  .carousel-row {
+    padding: 0; }
+    .carousel-row button, .carousel-row .button {
+      margin-right: 10px;
+      width: auto; }
+    .carousel-row ul {
+      margin-top: 30px;
+      margin-bottom: 50px; } }
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    text with bg image
+*
+*/
+.text-with-bg-image {
+  background-size: cover;
+  padding: 20px;
+  height: 600px; }
+  .text-with-bg-image .title {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 10px 0; }
+  .text-with-bg-image p {
+    color: white;
+    margin: 15px 0; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    "Large" Custom Buttons
+*
+*/
+.large-custom-button {
+  background-color: #f1f1f2;
+  border: 2px solid #999999;
+  width: 100%; }
+
+.large-custom-button:hover {
+  background-color: #f1f1f2;
+  border: 2px solid #1a1f71; }
+
+.large-custom-button.vertical {
+  padding: 44px 0 32px; }
+
+.large-custom-button.horizontal {
+  padding: 30px 0 32px; }
+
+.large-custom-button i.fa {
+  color: #999999; }
+
+.large-custom-button:hover i.fa {
+  color: #1a1f71; }
+
+.large-custom-button.vertical i.fa {
+  margin-bottom: 35px;
+  display: block; }
+
+.large-custom-button.horizontal i.fa {
+  position: absolute;
+  right: 10%; }
+
+.large-custom-button span {
+  color: #f7b600;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700; }
+
+.large-custom-button:hover span {
+  color: #1a1f71; }
+
+.large-custom-button.vertical span {
+  width: 100px;
+  display: block;
+  margin: 0 auto; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Custom Links w/ icons and text
+*
+*/
+.tool-holder {
+  padding: 32px 20px;
+  border-left: 0;
+  border-top: 1px solid #e1e1e1; }
+  .tool-holder > a {
+    display: block; }
+  .tool-holder:first-child {
+    border-left: 0;
+    border-top: 0; }
+  .tool-holder p {
+    color: #666666;
+    line-height: 24px;
+    margin: 22px 0 26px 0;
+    font-size: 14px;
+    min-height: 75px; }
+  .tool-holder i {
+    color: #999999; }
+  .tool-holder i.custom-links-blocker {
+    color: white;
+    font-size: 88px;
+    margin-top: 4px; }
+  .tool-holder .custom-link-text {
+    color: #f7b600;
+    font-size: 17px;
+    font-weight: 700; }
+  .tool-holder .custom-link-text i {
+    color: #f7b600;
+    font-size: 24px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+    display: inline-block; }
+  .tool-holder:hover i {
+    color: #1a1f71; }
+  .tool-holder:hover i.custom-links-blocker {
+    color: white; }
+  .tool-holder:hover .custom-link-text {
+    color: #1a1f71; }
+
+.feature-row {
+  margin: 0; }
+
+@media only screen and (min-width: 40.063em) {
+  .tool-holder {
+    border-top: 0;
+    border-left: 1px solid #e1e1e1;
+    padding: 0px 20px; }
+    .tool-holder:first-child {
+      border-top: 0;
+      border-left: 0; }
+
+  .feature-row {
+    margin: 50px 0; } }
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Messaging
+*
+*/
+.message {
+  line-height: 20px;
+  border: 2px solid;
+  padding: 17px 40px 15px 50px;
+  font-size: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .message button.close, .message a.close {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: transparent; }
+    .message button.close i, .message a.close i {
+      margin-top: 0;
+      top: 0;
+      left: 0;
+      line-height: 24px;
+      font-size: 24px;
+      width: 24px; }
+  .message i {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px; }
+  .message p {
+    vertical-align: center;
+    padding: 0;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 0 10px 0; }
+  .message ul {
+    font-size: 15px;
+    margin: 0 0 20px 18px; }
+
+.message.system {
+  background: #f1f1f2;
+  border-color: #75787b;
+  color: #666666; }
+  .message.system button.close, .message.system a.close, .message.system p {
+    color: #666666; }
+  .message.system a {
+    color: #222222;
+    text-decoration: underline; }
+
+.message.warning {
+  background: #fbeded;
+  border-color: #cc3333;
+  color: #cc3333; }
+  .message.warning button.close, .message.warning a.close, .message.warning p {
+    color: #cc3333; }
+  .message.warning a {
+    color: #990000;
+    text-decoration: underline; }
+
+.message.success {
+  background: #eff3f0;
+  border-color: #068011;
+  color: #058111; }
+  .message.success button.close, .message.success a.close, .message.success p {
+    color: #058111; }
+  .message.success a {
+    color: #003300;
+    text-decoration: underline; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .message {
+    padding: 35px 40px 17px 95px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .message p {
+      margin-bottom: 20px; }
+    .message i {
+      font-size: 40px;
+      top: 30px;
+      left: 40px; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Pagination
+*
+*/
+.pagination.simple {
+  color: #666666;
+  font-weight: 500; }
+
+.pagination.advanced {
+  color: #666666;
+  font-weight: 500; }
+
+.pagination.viewby {
+  font-weight: 500; }
+  .pagination.viewby .view {
+    background: none;
+    border-right: 2px solid #666666;
+    padding-right: 10px; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Modal
+*
+*/
+.reveal-modal {
+  background: #1a1f71;
+  padding: 5px;
+  top: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .reveal-modal .modal-body {
+    background: white;
+    width: 100%;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px; }
+    .reveal-modal .modal-body .button, .reveal-modal .modal-body button {
+      margin-bottom: 10px; }
+    .reveal-modal .modal-body hr {
+      margin-bottom: 20px; }
+  .reveal-modal h2 {
+    color: #1a1f71;
+    font-size: 24px;
+    margin: 0 0 10px 0; }
+  .reveal-modal .scrollable {
+    max-height: 400px;
+    overflow: auto;
+    padding-right: 3px; }
+  .reveal-modal button.close-reveal-modal {
+    background-color: transparent;
+    padding: 0px;
+    color: #949494; }
+    .reveal-modal button.close-reveal-modal:focus {
+      outline: dotted thin; }
+  .reveal-modal input[type="checkbox"] + label, .reveal-modal input[type="radio"] + label {
+    margin-right: 0px; }
+
+.lt-ie9 .reveal-modal {
+  padding: 5px; }
+.lt-ie9 .reveal-modal-bg {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+  filter: alpha(opacity=50); }
+
+body.modal-body {
+  overflow: hidden; }
+
+@media only screen and (min-width: 40.063em) {
+  .reveal-modal {
+    top: 100px; }
+    .reveal-modal .button, .reveal-modal button {
+      margin-bottom: 0px; }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1.3; } }
+/* min-width 641px, medium screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    FAQs
+*
+*/
+.faqs-jump-links {
+  list-style: none;
+  margin-left: 0;
+  padding: 0; }
+  .faqs-jump-links li a:link i, .faqs-jump-links li a:visited i {
+    color: #ef8400; }
+
+.faqs p {
+  margin-bottom: 5px; }
+  .faqs p.faqs-back-to-top {
+    margin-bottom: 32px; }
+    .faqs p.faqs-back-to-top a:hover {
+      text-decoration: underline; }
+.faqs ul {
+  margin-bottom: 0; }
+.faqs .faqs-question {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Data Rows
+*
+*/
+.data-grid tbody tr td {
+  vertical-align: top; }
+
+table.stretch {
+  width: 100%; }
+
+.data-grid-wrapper {
+  overflow-x: auto; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Data Rows
+*
+*/
+.data-rows button.has-tip,
+.data-rows button.has-tip:hover,
+.data-rows button.has-tip:focus {
+  background-color: transparent;
+  padding: 0px;
+  width: 15px;
+  height: 20px; }
+.data-rows button {
+  width: 21px;
+  height: 21px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0;
+  background-color: #ef8400; }
+  .data-rows button:hover, .data-rows button:focus {
+    background-color: #f7b600; }
+  .data-rows button i {
+    color: white; }
+.data-rows .data-row-odd, .data-rows .data-row-even {
+  padding: 15px 8px 8px; }
+.data-rows .data-row-odd {
+  background: white; }
+.data-rows .data-row-even {
+  border-top: 1px dashed #75787b;
+  border-bottom: 1px dashed #75787b;
+  background: #f9f9f9; }
+.data-rows .expando {
+  display: none; }
+.data-rows .transaction-desc, .data-rows .merchant-name {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  min-width: 100px;
+  text-transform: uppercase; }
+.data-rows .transaction-date {
+  padding: 0;
+  margin: 0;
+  font-size: 14px; }
+.data-rows .transaction-amount {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right; }
+.data-rows .transaction-status {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  text-align: right; }
+.data-rows .more-transaction-info p {
+  margin: 10px 0 10px;
+  font-size: 12px;
+  line-height: 14px; }
+.data-rows label {
+  font-weight: normal; }
+  .data-rows label.bold {
+    font-weight: bold;
+    color: #666666; }
+.data-rows input[type=text].small {
+  width: 90%;
+  display: inline; }
+  .data-rows input[type=text].small + button.has-tip {
+    display: inline; }
+.data-rows table {
+  background: none;
+  border: none;
+  margin-bottom: 0; }
+  .data-rows table label {
+    margin-bottom: 0; }
+  .data-rows table td {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .data-rows table td:first-of-type, .data-rows table td:last-of-type {
+      padding-left: 0;
+      padding-right: 0; }
+    .data-rows table td input[type="text"].small {
+      width: 80px; }
+
+@media only screen {
+  .data-rows .data-row-odd .row div:last-of-type, .data-rows .data-row-even .row div:last-of-type {
+    padding-right: 3px; } }
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .data-rows .data-row-odd .row div:last-of-type, .data-rows .data-row-even .row div:last-of-type {
+    padding-right: 15px; }
+  .data-rows input[type=text].small {
+    width: 75%;
+    display: inline; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+@media only screen and (min-width: 64.063em) {
+  .data-rows input[type=text].small {
+    width: 80%;
+    display: inline; } }
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Content Box
+*
+*/
+.content-container {
+  margin-bottom: 40px;
+  padding: 0 8px; }
+
+.box {
+  background: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 16px 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 8px;
+  max-width: 1000px; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .content-container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -211px;
+    padding: 10px 8px 225px 8px; }
+
+  .box {
+    padding: 20px 40px;
+    margin-bottom: 16px; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Content Balance
+*
+*/
+.balance-widget h2 {
+  display: inline-block;
+  margin-right: 10px; }
+.balance-widget h2, .balance-widget h3, .balance-widget h4 {
+  color: #1a1f71; }
+.balance-widget h3, .balance-widget .available-balance-amount {
+  font-size: 24px;
+  text-align: center; }
+.balance-widget h4, .balance-widget .actual-balance-amount {
+  font-size: 16px;
+  text-align: center; }
+.balance-widget select {
+  display: inline-block; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .balance-widget h3, .balance-widget h4 {
+    text-align: right; }
+  .balance-widget .available-balance-amount, .balance-widget .actual-balance-amount {
+    text-align: left; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Images
+*
+*/
+.img-responsive {
+  display: inline;
+  height: auto;
+  max-width: 100%; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Images
+*
+*/
+iframe.iframe-small {
+  height: 480px; }
+iframe.iframe-medium {
+  height: 600px; }
+iframe.iframe-large {
+  height: 768px; }
+iframe.iframe-xlarge {
+  height: 960px; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Language Selector
+*
+*/
+#language-label {
+  font-size: 12px; }
+
+a.dropdown {
+  color: #1a1f71; }
+
+button.dropdown-button {
+  background: transparent;
+  color: #1a1f71;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 12px; }
+  button.dropdown-button:hover {
+    text-decoration: underline; }
+  button.dropdown-button i {
+    color: #ef8400; }
+
+ul.language-short-list {
+  display: inline-block;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  line-height: 1.0; }
+  ul.language-short-list #lang-label-top {
+    border-right: none; }
+  ul.language-short-list li {
+    display: inline-block;
+    margin-bottom: 0; }
+    ul.language-short-list li a {
+      font-size: 12px;
+      padding-left: 15px;
+      padding-right: 10px;
+      border-left: 1px solid #666666; }
+    ul.language-short-list li:first-of-type a {
+      border-left: none; }
+    ul.language-short-list li:first-of-type button {
+      border-left: none; }
+    ul.language-short-list li:last-of-type button {
+      padding-right: 0; }
+    ul.language-short-list li button {
+      font-size: 12px;
+      background: none;
+      color: #1a1f71;
+      padding: 0 3px;
+      border-left: 1px solid #666666;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      -ms-border-radius: 0px;
+      -o-border-radius: 0px;
+      border-radius: 0px;
+      text-transform: uppercase; }
+      ul.language-short-list li button:hover, ul.language-short-list li button:focus, ul.language-short-list li button:active {
+        outline: thin dotted;
+        text-decoration: underline; }
+      ul.language-short-list li button[aria-selected="true"], ul.language-short-list li button.current {
+        font-weight: bold !important; }
+
+ul.f-dropdown li button {
+  background: transparent;
+  color: #1a1f71;
+  padding: 8px;
+  font-size: 13px;
+  width: 100%;
+  text-align: left; }
+ul.f-dropdown.f-dropdown-hidden {
+  display: none; }
+ul.f-dropdown.f-dropdown-show {
+  display: block; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  ul.language-short-list li button {
+    padding: 0 10px; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Content Icon
+*
+*/
+i.warning {
+  color: #cc3333; }
+i.success {
+  color: #058111; }
+
+.scrollable {
+  max-height: 600px;
+  overflow: auto;
+  padding-right: 3px; }
+  .scrollable.small {
+    max-height: 400px; }
+  .scrollable.medium {
+    max-height: 600px; }
+  .scrollable.large {
+    max-height: 768px; }
+  .scrollable.xlarge {
+    max-height: 960px; }
+
+.progress {
+  background: #cccccc;
+  margin: 10px 0; }
+  .progress .meter {
+    background: #1a1f71;
+    color: white;
+    padding: 3px 8px 0 0;
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold; }
+  .progress.alert .meter {
+    color: #400000; }
+  .progress.success .meter {
+    color: #003900; }
+  .progress.secondary .meter {
+    color: black; }
+
+.thumbnail {
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 20px; }
+  .thumbnail img {
+    max-height: 180px; }
+  .thumbnail .caption {
+    text-align: center;
+    margin-top: 10px; }
+    .thumbnail .caption button {
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 100;
+      margin-bottom: 0; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Content Box
+*
+*/
+.check-container {
+  border: 5px solid #cccccc;
+  padding: 15px 0;
+  background: #e3f1e4; }
+  .check-container .row-one {
+    padding-bottom: 20px; }
+    .check-container .row-one address {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 18px; }
+    .check-container .row-one .date {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 30px; }
+    .check-container .row-one .void {
+      font-size: 30px;
+      padding-top: 15px;
+      font-weight: bold; }
+  .check-container .row-two {
+    padding-bottom: 30px; }
+    .check-container .row-two .title {
+      padding-top: 10px; }
+    .check-container .row-two .check-amount {
+      border: 1px solid black;
+      padding: 20px 10px; }
+  .check-container .row-three, .check-container .row-four, .check-container .row-five {
+    padding-bottom: 20px; }
+  .check-container .row-six {
+    font-size: 14px; }
+    .check-container .row-six span {
+      margin-right: 20px; }
+  .check-container .underline {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px; }
+  .check-container .check-number {
+    padding-left: 0;
+    padding-right: 0; }
+
+form .check-container {
+  padding: 15px; }
+
+@media all {
+  .page-break {
+    display: none; } }
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Terms and Conditions
+*
+*/
+.terms {
+  border: 2px solid #777777;
+  background-color: #f1f1f1;
+  color: #666666;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 330px;
+  overflow-y: scroll; }
+  .terms .title {
+    font-weight: bold; }
+  .terms ol li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    padding: 0; }
+    .terms ol li:before {
+      color: #666666;
+      font-weight: bold; }
+  .terms ul li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    padding: 0; }
+
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Footer
+*
+*/
+.footer {
+  border-top: 1px solid #dddddd;
+  background: white; }
+  .footer .footer-navigation {
+    list-style: none;
+    margin-left: 0px;
+    margin-top: 25px;
+    text-align: center; }
+    .footer .footer-navigation li {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase; }
+      .footer .footer-navigation li a {
+        border-bottom: 1px solid #dddddd;
+        display: block;
+        padding: 17px 0; }
+        .footer .footer-navigation li a:link, .footer .footer-navigation li a:visited {
+          color: #666666;
+          text-decoration: none; }
+        .footer .footer-navigation li a:hover {
+          color: #ef8400;
+          text-decoration: underline; }
+      .footer .footer-navigation li:last-child a {
+        border: none; }
+  .footer .extra {
+    background: #f9f9f9;
+    width: 100%;
+    display: inline-block; }
+    .footer .extra .language {
+      margin-top: 25px;
+      margin-bottom: 25px; }
+      .footer .extra .language .language-label {
+        padding-right: 15px;
+        text-align: right; }
+      .footer .extra .language .dropdown i {
+        color: #ef8400; }
+      .footer .extra .language .language-drop {
+        margin-top: 0; }
+    .footer .extra .copyright {
+      text-align: center; }
+      .footer .extra .copyright p {
+        font-size: small;
+        margin-bottom: 25px; }
+
+@media only screen and (min-width: 40.063em) {
+  .footer {
+    height: 208px; }
+    .footer .footer-navigation li {
+      display: inline-block; }
+      .footer .footer-navigation li a {
+        border-bottom: none;
+        border-right: 1px solid #dddddd;
+        display: block;
+        padding: 0 17px; } }
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Grid Custom
+* Since IE 8 and lower doesn't support unit rem, this SASS file is to overide the
+* Foundation default grid system.
+*
+*/
+.lt-ie9 .row {
+  max-width: 1000px; }
+  .lt-ie9 .row .row {
+    margin-left: -15px;
+    margin-right: -15px; }
+.lt-ie9 .column, .lt-ie9 .columns {
+  padding-left: 15px;
+  padding-right: 15px; }
+.lt-ie9 .box {
+  max-width: 1000px; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Statement
+*
+*/
+.statement {
+  background: white;
+  line-height: 25px;
+  font-size: 12px; }
+  .statement .content-container {
+    padding-bottom: 0px; }
+  .statement table col:last-child {
+    white-space: nowrap; }
+  .statement table tr th, .statement table tr td {
+    padding: 9px 10px;
+    font-size: 12px; }
+    .statement table tr th.nowrap, .statement table tr td.nowrap {
+      white-space: nowrap; }
+  .statement table.layout {
+    border: none; }
+    .statement table.layout tr {
+      background: transparent; }
+      .statement table.layout tr td {
+        padding: 5px;
+        vertical-align: top; }
+        .statement table.layout tr td.table-cell-6 {
+          width: 50%; }
+  .statement table caption {
+    height: 1px;
+    left: -99999px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px; }
+  .statement .statement-header {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .statement .statement-box {
+    padding: 10px;
+    text-align: center; }
+  .statement h1 {
+    font-size: 30px; }
+  .statement h2 {
+    font-size: 24px; }
+  .statement h3 {
+    font-size: 18px; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+.standalone {
+  font-size: 14px; }
+  .standalone h1 {
+    font-size: 30px; }
+  .standalone h2 {
+    font-size: 24px; }
+  .standalone h3 {
+    font-size: 18px; }
+  .standalone h4 {
+    font-size: 16px; }
+  .standalone address {
+    line-height: 20px; }
+  .standalone ul li, .standalone ol li {
+    font-size: 14px; }
+  .standalone .standalone-header {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    .standalone .standalone-header img.header-logo {
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: inherit; }
+  .standalone .standalone-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc; }
+  .standalone .row-space {
+    margin-top: 20px; }
+  .standalone.lt-ie9 h1, .standalone.lt-ie9 h2, .standalone.lt-ie9 h3 {
+    text-align: left; }
+
+@media only screen and (min-width: 40.063em) {
+  .standalone .standalone-header {
+    margin-top: 0px; }
+    .standalone .standalone-header img.header-logo {
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: block; } }
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Home Page.
+*
+*/
+.feature-rows {
+  background-color: #f1f1f1; }
+  .feature-rows i.feature-item-icon {
+    color: #ef8400; }
+
+.jump-links {
+  margin: 43px 0; }
+  .jump-links .features-list {
+    border-left: none;
+    text-align: center;
+    padding: 10px 0; }
+
+.back-to-learn-more {
+  padding: 10px 0; }
+  .back-to-learn-more a {
+    font-size: 12px;
+    width: 20%;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 20px; }
+
+.video-container video {
+  width: 100%; }
+
+.feature-item-text-1 {
+  display: block;
+  font-size: 18px;
+  margin: 5px 0px; }
+
+.feature-item-text-2 {
+  display: block;
+  font-size: 20px;
+  margin: 15px 0px;
+  font-weight: bold; }
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .jump-links {
+    margin: 43px 0; }
+    .jump-links .features-list {
+      border-left: 1px solid #666666;
+      text-align: center; }
+      .jump-links .features-list:first-of-type {
+        border-left: none; }
+
+  .feature-text-box {
+    border-right: 1px solid #cccccc; } }
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 768px, medium screens */
+/* min-width 880px, medium screens */
+/* min-width 960px, medium screens */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
+/*!
+ * jQuery UI Datepicker 1.11.4
+ * http://jqueryui.com
+ * http://api.jqueryui.com/datepicker/#theming
+ */
+.datepicker-wrapper input[data-datepicker] {
+  width: 85%; }
+.datepicker-wrapper button.ui-datepicker-trigger {
+  float: right; }
+
+.ui-datepicker {
+  width: 261px;
+  padding: 2px;
+  display: none; }
+  .ui-datepicker a.ui-state-default {
+    border: none;
+    background: none; }
+  .ui-datepicker .ui-widget-header {
+    background: white;
+    border: none;
+    color: #666666;
+    font-weight: normal; }
+  .ui-datepicker.ui-widget-content {
+    background: white; }
+    .ui-datepicker.ui-widget-content .ui-state-hover {
+      background: #cccccc; }
+  .ui-datepicker td.ui-datepicker-today {
+    background: #ef8400; }
+  .ui-datepicker td.ui-datepicker-current-day {
+    background: #cccccc; }
+
+button.ui-datepicker-trigger {
+  background: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #666666;
+  padding: 6px 10px;
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-bottom: 0px;
+  height: 36px;
+  width: 36px; }
+  button.ui-datepicker-trigger:hover, button.ui-datepicker-trigger:focus {
+    background: #cccccc;
+    color: #666666; }
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0; }
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em; }
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  top: 1px; }
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px; }
+
+.ui-datepicker .ui-datepicker-next {
+  right: 2px; }
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px; }
+
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+  text-indent: -9999px; }
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center; }
+
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0; }
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  width: 45%; }
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border: none;
+  margin: 0; }
+  .ui-datepicker table thead {
+    background: whitesmoke; }
+  .ui-datepicker table tr:nth-of-type(even) {
+    background: none; }
+  .ui-datepicker table tr td {
+    padding: 0; }
+
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold; }
+
+.ui-datepicker td {
+  border: 1px solid #CCC;
+  padding: 1px; }
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none; }
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0; }
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible; }
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto; }
+
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left; }
+
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em; }
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%; }
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%; }
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%; }
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0; }
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left; }
+
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0; }
+
+/* RTL support */
+.ui-datepicker-rtl {
+  direction: rtl; }
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current, .ui-datepicker-rtl .ui-datepicker-group {
+  float: right; }
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px; }
+
+.ui-datepicker-trigger {
+  margin-left: 5px;
+  vertical-align: central;
+  width: 18px;
+  height: 19px; }
+
+/*!
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+/* Component containers
+----------------------------------*/
+.ui-widget {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.1em; }
+
+.ui-widget .ui-widget {
+  font-size: 1em; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em; }
+
+.ui-widget-content {
+  border: 1px solid #aaaaaa;
+  background: white url("../_Images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+  color: #222222; }
+
+.ui-widget-content a {
+  color: #222222; }
+
+.ui-widget-header {
+  border: 1px solid #aaaaaa;
+  background: #cccccc url("../_Images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+  color: #222222;
+  font-weight: bold; }
+
+.ui-widget-header a {
+  color: #222222; }
+
+/* Interaction states----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid lightgray;
+  background: #e6e6e6 url("../_Images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #555555; }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #555555;
+  text-decoration: none; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #999999;
+  background: #dadada url("../_Images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #212121; }
+
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited {
+  color: #212121;
+  text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: white url("../_Images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #212121; }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #212121;
+  text-decoration: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fcefa1;
+  background: #fbf9ee url("../_Images/ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
+  color: #363636; }
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636; }
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #fef1ec url("../_Images/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
+  color: #cd0a0a; }
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #cd0a0a; }
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #cd0a0a; }
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  /* support: IE8 */
+  font-weight: normal; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  /* support: IE8 */
+  background-image: none; }
+
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+  /* support: IE8 - See #6059 */ }
+
+/* Icons
+----------------------------------*/
+/* states and images */
+.ui-icon {
+  width: 16px;
+  height: 16px; }
+
+.ui-icon, .ui-widget-content .ui-icon {
+  background-image: url("../_Images/ui-icons_222222_256x240.png"); }
+
+.ui-widget-header .ui-icon {
+  background-image: url("../_Images/ui-icons_222222_256x240.png"); }
+
+.ui-state-default .ui-icon {
+  background-image: url("../_Images/ui-icons_888888_256x240.png"); }
+
+.ui-state-active .ui-icon {
+  background-image: url("../_Images/ui-icons_454545_256x240.png"); }
+
+.ui-state-highlight .ui-icon {
+  background-image: url("../_Images/ui-icons_2e83ff_256x240.png"); }
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+  background-image: url("../_Images/ui-icons_cd0a0a_256x240.png"); }
+
+/* positioning */
+.ui-icon-blank {
+  background-position: 16px 16px; }
+
+.ui-icon-carat-1-n {
+  background-position: 0 0; }
+
+.ui-icon-carat-1-ne {
+  background-position: -16px 0; }
+
+.ui-icon-carat-1-e {
+  background-position: -32px 0; }
+
+.ui-icon-carat-1-se {
+  background-position: -48px 0; }
+
+.ui-icon-carat-1-s {
+  background-position: -64px 0; }
+
+.ui-icon-carat-1-sw {
+  background-position: -80px 0; }
+
+.ui-icon-carat-1-w {
+  background-position: -96px 0; }
+
+.ui-icon-carat-1-nw {
+  background-position: -112px 0; }
+
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0; }
+
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0; }
+
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px; }
+
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px; }
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px; }
+
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px; }
+
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px; }
+
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px; }
+
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px; }
+
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px; }
+
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px; }
+
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px; }
+
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px; }
+
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px; }
+
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px; }
+
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px; }
+
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px; }
+
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px; }
+
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px; }
+
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px; }
+
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px; }
+
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px; }
+
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px; }
+
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px; }
+
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px; }
+
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px; }
+
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px; }
+
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px; }
+
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px; }
+
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px; }
+
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px; }
+
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px; }
+
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px; }
+
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px; }
+
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px; }
+
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px; }
+
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px; }
+
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px; }
+
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px; }
+
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px; }
+
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px; }
+
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px; }
+
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px; }
+
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px; }
+
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px; }
+
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px; }
+
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px; }
+
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px; }
+
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px; }
+
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px; }
+
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px; }
+
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px; }
+
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px; }
+
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px; }
+
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px; }
+
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px; }
+
+.ui-icon-arrow-4 {
+  background-position: 0 -80px; }
+
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px; }
+
+.ui-icon-extlink {
+  background-position: -32px -80px; }
+
+.ui-icon-newwin {
+  background-position: -48px -80px; }
+
+.ui-icon-refresh {
+  background-position: -64px -80px; }
+
+.ui-icon-shuffle {
+  background-position: -80px -80px; }
+
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px; }
+
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px; }
+
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px; }
+
+.ui-icon-folder-open {
+  background-position: -16px -96px; }
+
+.ui-icon-document {
+  background-position: -32px -96px; }
+
+.ui-icon-document-b {
+  background-position: -48px -96px; }
+
+.ui-icon-note {
+  background-position: -64px -96px; }
+
+.ui-icon-mail-closed {
+  background-position: -80px -96px; }
+
+.ui-icon-mail-open {
+  background-position: -96px -96px; }
+
+.ui-icon-suitcase {
+  background-position: -112px -96px; }
+
+.ui-icon-comment {
+  background-position: -128px -96px; }
+
+.ui-icon-person {
+  background-position: -144px -96px; }
+
+.ui-icon-print {
+  background-position: -160px -96px; }
+
+.ui-icon-trash {
+  background-position: -176px -96px; }
+
+.ui-icon-locked {
+  background-position: -192px -96px; }
+
+.ui-icon-unlocked {
+  background-position: -208px -96px; }
+
+.ui-icon-bookmark {
+  background-position: -224px -96px; }
+
+.ui-icon-tag {
+  background-position: -240px -96px; }
+
+.ui-icon-home {
+  background-position: 0 -112px; }
+
+.ui-icon-flag {
+  background-position: -16px -112px; }
+
+.ui-icon-calendar {
+  background-position: -32px -112px; }
+
+.ui-icon-cart {
+  background-position: -48px -112px; }
+
+.ui-icon-pencil {
+  background-position: -64px -112px; }
+
+.ui-icon-clock {
+  background-position: -80px -112px; }
+
+.ui-icon-disk {
+  background-position: -96px -112px; }
+
+.ui-icon-calculator {
+  background-position: -112px -112px; }
+
+.ui-icon-zoomin {
+  background-position: -128px -112px; }
+
+.ui-icon-zoomout {
+  background-position: -144px -112px; }
+
+.ui-icon-search {
+  background-position: -160px -112px; }
+
+.ui-icon-wrench {
+  background-position: -176px -112px; }
+
+.ui-icon-gear {
+  background-position: -192px -112px; }
+
+.ui-icon-heart {
+  background-position: -208px -112px; }
+
+.ui-icon-star {
+  background-position: -224px -112px; }
+
+.ui-icon-link {
+  background-position: -240px -112px; }
+
+.ui-icon-cancel {
+  background-position: 0 -128px; }
+
+.ui-icon-plus {
+  background-position: -16px -128px; }
+
+.ui-icon-plusthick {
+  background-position: -32px -128px; }
+
+.ui-icon-minus {
+  background-position: -48px -128px; }
+
+.ui-icon-minusthick {
+  background-position: -64px -128px; }
+
+.ui-icon-close {
+  background-position: -80px -128px; }
+
+.ui-icon-closethick {
+  background-position: -96px -128px; }
+
+.ui-icon-key {
+  background-position: -112px -128px; }
+
+.ui-icon-lightbulb {
+  background-position: -128px -128px; }
+
+.ui-icon-scissors {
+  background-position: -144px -128px; }
+
+.ui-icon-clipboard {
+  background-position: -160px -128px; }
+
+.ui-icon-copy {
+  background-position: -176px -128px; }
+
+.ui-icon-contact {
+  background-position: -192px -128px; }
+
+.ui-icon-image {
+  background-position: -208px -128px; }
+
+.ui-icon-video {
+  background-position: -224px -128px; }
+
+.ui-icon-script {
+  background-position: -240px -128px; }
+
+.ui-icon-alert {
+  background-position: 0 -144px; }
+
+.ui-icon-info {
+  background-position: -16px -144px; }
+
+.ui-icon-notice {
+  background-position: -32px -144px; }
+
+.ui-icon-help {
+  background-position: -48px -144px; }
+
+.ui-icon-check {
+  background-position: -64px -144px; }
+
+.ui-icon-bullet {
+  background-position: -80px -144px; }
+
+.ui-icon-radio-on {
+  background-position: -96px -144px; }
+
+.ui-icon-radio-off {
+  background-position: -112px -144px; }
+
+.ui-icon-pin-w {
+  background-position: -128px -144px; }
+
+.ui-icon-pin-s {
+  background-position: -144px -144px; }
+
+.ui-icon-play {
+  background-position: 0 -160px; }
+
+.ui-icon-pause {
+  background-position: -16px -160px; }
+
+.ui-icon-seek-next {
+  background-position: -32px -160px; }
+
+.ui-icon-seek-prev {
+  background-position: -48px -160px; }
+
+.ui-icon-seek-end {
+  background-position: -64px -160px; }
+
+.ui-icon-seek-start {
+  background-position: -80px -160px; }
+
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first {
+  background-position: -80px -160px; }
+
+.ui-icon-stop {
+  background-position: -96px -160px; }
+
+.ui-icon-eject {
+  background-position: -112px -160px; }
+
+.ui-icon-volume-off {
+  background-position: -128px -160px; }
+
+.ui-icon-volume-on {
+  background-position: -144px -160px; }
+
+.ui-icon-power {
+  background-position: 0 -176px; }
+
+.ui-icon-signal-diag {
+  background-position: -16px -176px; }
+
+.ui-icon-signal {
+  background-position: -32px -176px; }
+
+.ui-icon-battery-0 {
+  background-position: -48px -176px; }
+
+.ui-icon-battery-1 {
+  background-position: -64px -176px; }
+
+.ui-icon-battery-2 {
+  background-position: -80px -176px; }
+
+.ui-icon-battery-3 {
+  background-position: -96px -176px; }
+
+.ui-icon-circle-plus {
+  background-position: 0 -192px; }
+
+.ui-icon-circle-minus {
+  background-position: -16px -192px; }
+
+.ui-icon-circle-close {
+  background-position: -32px -192px; }
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px; }
+
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px; }
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px; }
+
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px; }
+
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px; }
+
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px; }
+
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px; }
+
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px; }
+
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px; }
+
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px; }
+
+.ui-icon-circle-check {
+  background-position: -208px -192px; }
+
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px; }
+
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px; }
+
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px; }
+
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px; }
+
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px; }
+
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px; }
+
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px; }
+
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px; }
+
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px; }
+
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px; }
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px; }
+
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px; }
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 4px; }
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 4px; }
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 4px; }
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 4px; }
+
+/* Overlays */
+.ui-widget-overlay {
+  background: #aaaaaa url("../_Images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+  opacity: 0.3;
+  filter: Alpha(Opacity=30);
+  /* support: IE8 */ }
+
+.ui-widget-shadow {
+  margin: -8px 0 0 -8px;
+  padding: 8px;
+  background: #aaaaaa url("../_Images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+  opacity: 0.3;
+  filter: Alpha(Opacity=30);
+  /* support: IE8 */
+  border-radius: 8px; }
+
+@media only screen and (min-width: 40.063em) {
+  .datepicker-wrapper input[data-datepicker] {
+    width: auto; }
+  .datepicker-wrapper button.ui-datepicker-trigger {
+    float: none; } }
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Misc.
+*
+*/
+.gov-id-container {
+  display: none; }
+

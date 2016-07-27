@@ -1,0 +1,188 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Typography
+*
+*/
+
+body {
+	color: $body-text-color;
+    font-weight: 400;
+}
+
+button {
+    @include border-radius(3px);
+    box-shadow:0;
+    margin:0;
+    cursor: pointer;
+}
+
+h1 {
+    color: $typography-h1-color;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h2 {
+    color: $typography-h2-color;
+    font-size: 24px;
+    font-weight: 400;
+    margin:10px 0;
+}
+
+h3 {
+    color: $typography-h3-color;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h4 {
+    color: $typography-h4-color;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h5 {
+    color: $typography-h5-color;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h6 {
+    color: $typography-h6-color;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    color: $body-text-color;
+    font-size: 14px;
+}
+
+small {
+    color: $body-text-color;
+    font-size: 12px;
+}
+
+a {
+	color: $link-color;
+    text-decoration: underline;
+
+    &:link, &:visited {
+        color: $link-color;
+        text-decoration: underline;
+    }
+
+    &:hover, &:focus {
+        color: $link-hover-color;
+        text-decoration: underline;
+        @include transition(color, 0.5s, ease-in-out)
+    }
+}
+
+ul, ol {
+    margin-left: 1.5rem;
+
+    li {
+        margin-bottom: 5px;
+        font-size: 14px; 
+
+        i { color: $icon-color; }
+    }
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: li-counter;
+
+    li {
+        position: relative;
+        padding-left: 0.5em;
+    }
+}
+
+ol > li:before {
+    position: absolute;
+	color: $icon-color;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    left: -1em;
+    text-align: right;
+}
+
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    h1, h2 {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+    
+} /* min-width 880px, medium screens */
+
+// Medium-Large-3 screens
+@media only screen and (min-width: 40em) and (max-width: 60em) {
+    
+} /* min-width 960px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+    
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

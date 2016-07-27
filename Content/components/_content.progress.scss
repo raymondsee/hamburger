@@ -1,0 +1,25 @@
+.progress {
+	background: $progress-bar-background;
+	margin: 10px 0;
+
+	.meter {
+		background: $progress-bar-default-color;
+		color: $progress-bar-default-text-color;
+		padding: 3px 8px 0 0;
+		text-align: right;
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+	&.alert .meter {
+		color: $progress-bar-alert-text-color;
+	}
+
+	&.success .meter {
+		color: $progress-bar-success-text-color;
+	}
+
+	&.secondary .meter {
+		color: $progress-bar-secondary-text-color;
+	}
+}

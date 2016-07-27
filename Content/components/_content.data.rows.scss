@@ -1,0 +1,202 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Data Rows
+*
+*/
+
+.data-rows {
+	button.has-tip, 
+	button.has-tip:hover, 
+	button.has-tip:focus {
+		background-color:transparent; 
+		padding:0px; 
+		width: 15px; 
+		height: 20px;
+	}
+
+    button {
+        width: 21px;
+        height: 21px;
+        @include border-radius(3px);
+        padding:0;
+		 background-color: $data-row-button-background-color;
+
+        &:hover, &:focus {
+            background-color: $data-row-button-hover-color;
+        }
+
+        i { color: $data-row-button-icon-color; }
+    }
+
+    .data-row-odd, .data-row-even {
+        padding: 15px 8px 8px;
+    }
+
+	.data-row-odd {
+        background: $data-row-odd-background-color;
+    }
+
+    .data-row-even {
+        border-top: 1px dashed $data-row-even-border-color;
+        border-bottom: 1px dashed $data-row-even-border-color;
+        background: $data-row-even-background-color;
+    }
+
+    .expando { display: none; }
+
+    // Transactions Specific Styling
+
+     .transaction-desc, .merchant-name {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        line-height: 16px;
+        min-width: 100px;
+        text-transform: uppercase;
+    }
+
+    .transaction-date {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .transaction-amount {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: right;
+    }
+
+    .transaction-status {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .more-transaction-info {
+        p {
+            margin: 10px 0 10px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    
+    label {
+        font-weight: normal;
+        
+        &.bold {
+            font-weight: bold;
+			color: $body-text-color;
+        }
+    }
+
+	input[type=text].small {
+		width: 90%;
+		display: inline;
+
+		& + button.has-tip {
+			display: inline;
+		}
+	}
+    
+    table {
+        background: none;
+        border: none;
+        margin-bottom: 0;
+        
+        label {
+            margin-bottom: 0;
+        }
+        
+        td {
+            padding-top: 0;
+            padding-bottom: 0;
+            
+            &:first-of-type, &:last-of-type {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+            input[type="text"].small {
+                width: 80px;
+            }
+        }
+    }    
+}
+
+// Small screens
+@media only screen { 
+
+	.data-rows {
+		.data-row-odd, .data-row-even {
+			.row {
+				div:last-of-type {
+					padding-right: 3px;
+				}
+			}
+		}
+	}
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    .data-rows {
+		.data-row-odd, .data-row-even {
+			.row {
+				div:last-of-type {
+					padding-right: 15px;
+				}
+			}
+		}
+
+		input[type=text].small {
+			width: 75%;
+			display: inline;
+		}
+	}
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Medium-Large-1 screens
+@media only screen and (min-width: 48em) {
+
+} /* min-width 768px, medium screens */
+
+// Medium-Large-2 screens
+@media only screen and (min-width: 55em) {
+
+} /* min-width 880px, medium screens */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+	.data-rows {
+
+		input[type=text].small {
+			width: 80%;
+			display: inline;
+		}
+	}
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */

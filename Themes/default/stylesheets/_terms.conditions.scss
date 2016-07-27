@@ -1,0 +1,18 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Terms and Conditions
+*
+*/
+
+.terms {
+    border:2px solid $terms-border-color;
+    background-color: $terms-background-color;
+    color: $terms-text-color;
+
+    ol li {
+    	&:before {
+    		color: $terms-text-color;
+    	}
+    }
+}

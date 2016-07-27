@@ -1,0 +1,21 @@
+.scrollable {
+	max-height: 600px;
+	overflow: auto;
+	padding-right: 3px;
+
+	&.small {
+		max-height: 400px;
+	}
+
+	&.medium {
+		max-height: 600px;
+	}
+
+	&.large {
+		max-height: 768px;
+	}
+
+	&.xlarge {
+		max-height: 960px;
+	}
+}

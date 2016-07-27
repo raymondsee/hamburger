@@ -1,0 +1,128 @@
+/**
+* DPS Prepaid Consumer Styles
+* Theme:        Default
+* Component:    Carousel
+*
+*/
+
+.carousel {
+
+	h2 {
+		color: $carousel-text-color;
+	}
+
+	>li {
+		background: $secondary-color;
+		height: $carousel-height;
+		
+		&.slider-1 {
+			background-color: $slider-1-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-1-color-1), color-stop(100%, $slider-1-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-1-color-1, $slider-1-color-2);
+			background-image: linear-gradient(to right,$slider-1-color-1, $slider-1-color-2);
+		}
+
+		&.slider-2 {
+			background-color: $slider-2-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-2-color-1), color-stop(100%, $slider-2-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-2-color-1, $slider-2-color-2);
+			background-image: linear-gradient(to right, $slider-2-color-1, $slider-2-color-2);
+		}
+
+		&.slider-3 {
+			background-color: $slider-3-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-3-color-1), color-stop(100%, $slider-3-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-3-color-1, $slider-3-color-2);
+			background-image: linear-gradient(to right, $slider-3-color-1, $slider-3-color-2);
+		}
+
+		&.slider-4 {
+			background-color: $slider-4-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-4-color-1), color-stop(100%, $slider-4-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-4-color-1, $slider-4-color-2);
+			background-image: linear-gradient(to right, $slider-4-color-1, $slider-4-color-2);
+		}
+
+		&.slider-5 {
+			background-color: $slider-5-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-5-color-1), color-stop(100%, $slider-5-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-5-color-1, $slider-5-color-2);
+			background-image: linear-gradient(to right, $slider-5-color-1, $slider-5-color-2);
+		}
+
+		&.slider-6 {
+			background-color: $slider-6-color-1;
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $slider-6-color-1), color-stop(100%, $slider-6-color-2));
+			background-image: -webkit-linear-gradient(left, $slider-6-color-1, $slider-6-color-2);
+			background-image: linear-gradient(to right, $slider-6-color-1, $slider-6-color-2);
+		}
+
+		.slider-content {
+			color: $carousel-text-color;
+			h2 {
+				color: $carousel-text-color;
+				font-size: $carousel-h2-font-size-small;
+			}
+		}
+	}
+}
+
+.outside-carousel {
+    .sign-in-carousel {
+        background: $button-secondary-color;
+    }
+}
+
+.carousel-row {
+    button, .button {
+		i {
+			color: $button-text-color;
+		}
+    }
+    
+    .custom-button {
+        border: 2px solid white;
+        background: $primary-color;
+
+		&:hover, &:focus, &:active {
+			border-color: white;
+			color: $primary-color;
+			background: white;
+		}
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+    .orbit-slides-container {
+        min-height: $carousel-slides-container-min-height;
+    }
+
+    .carousel {
+
+		>li { 
+			height: $carousel-slides-height;
+
+			.slider-content {
+				color: $carousel-text-color;
+				h2 {
+					font-size: $carousel-h2-font-size-medium;
+				}
+			}
+		}
+	}
+}
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+	.carousel {
+		> li {
+			.slider-content {
+				h2 {
+					font-size: $carousel-h2-font-size-large;
+				}
+			}
+		}
+	}
+}
