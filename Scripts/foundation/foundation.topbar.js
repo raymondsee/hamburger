@@ -69,6 +69,7 @@
             return false;
         },
         toggle: function (toggleEl) {
+            alert('in toggle');
             var self = this,
                 topbar;
             if (toggleEl) {
@@ -99,9 +100,9 @@
 
                 topbar
                   .toggleClass('expanded')
-                  .css('height', function () {
+                  .css('height', function () {alert('in toggle CSS');
                       var nav_height = null;
-                      var hamburger = $(this).find("ul.title-area li.menu-icon a");
+                      var hamburger = $(this).find("ul.title-area li.menu-icon button span");
                       if (!$(this).hasClass("expanded")) {
                           var logo_program_name_height = $(this).find('>ul').height();
                           nav_height = logo_program_name_height;
@@ -121,6 +122,7 @@
             }
 
             if (settings.scrolltop) {
+                alert(settings.scrolltop);
                 if (!topbar.hasClass('expanded')) {
                     if (topbar.hasClass('fixed')) {
                         topbar.parent().addClass('fixed');
