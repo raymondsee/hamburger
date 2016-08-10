@@ -1,5 +1,7 @@
 $(function () {
-
+    $('.sample').on('click', function(){
+        alert('button is click');
+    });
 
     $("input#date-to-add-funds[data-a11y-datepicker]").a11yDatepicker();
 
