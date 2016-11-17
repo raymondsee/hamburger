@@ -8,6 +8,8 @@
   font-family: 'FontAwesome';
   src: url("../../../Content/_Fonts/fontawesome-webfont.eot?v=4.0.3");
   src: url("../../../Content/_Fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../../../Content/_Fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../../../Content/_Fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../../../Content/_Fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  src: url("https://raymondsee.github.io/assets/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("https://raymondsee.github.io/assets/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("https://raymondsee.github.io/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("https://raymondsee.github.io/assets/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("https://raymondsee.github.io/assets/font-awesome/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
