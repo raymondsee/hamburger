@@ -24,59 +24,6 @@
 * IMPORTANT: Color variable names should describe the ui component and not have any specific color in the name
 * Good: $body-text-color: #666; Bad: $grey-text: #666;
 */
-
-.top-bar .toggle-topbar.menu-icon button {
-    background: #cccccc;
-}
-.top-bar .toggle-topbar.menu-icon button {
-    background: #cccccc;
-}
-.top-bar .toggle-topbar.menu-icon button {
-    height: 34px;
-    line-height: 33px;
-    padding: 0;
-    padding-right: 25px;
-    color: white;
-    position: relative;
-    width: 34px;
-    border-radius: 3px;
-}
-.top-bar .toggle-topbar button {
-    color: #1a1f71;
-    text-transform: uppercase;
-    font-size: 0.8125rem;
-    font-weight: bold;
-    position: relative;
-    display: block;
-    padding: 0 26px;
-    height: 55px;
-    line-height: 55px;
-    background: #ccc;
-}
-
-.top-bar .toggle-topbar.menu-icon button::after {
-    -webkit-box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
-    box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
-}
-.top-bar .toggle-topbar.menu-icon button::after {
-    -webkit-box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
-    box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
-}
-.top-bar .toggle-topbar.menu-icon button::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    display: block;
-    width: 16px;
-    top: 0;
-    height: 0;
-    -webkit-box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
-    box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
-}
-/* hamburger fix */
-
-
-
 .dps-download-css {
   text-align: center; }
 

@@ -227,11 +227,19 @@ ul, ol {
       color: #ef8400; }
 
 ol {
-  list-style-type: none;
   counter-reset: li-counter; }
   ol li {
     position: relative;
     padding-left: 0.5em; }
+  ol.nested-list-display {
+    list-style: inline; }
+    ol.nested-list-display li:before {
+      content: ''; }
+
+ol.nested-list-display {
+  list-style-type: inline; }
+  ol.nested-list-display li {
+    list-style-type: inline; }
 
 ol > li:before {
   position: absolute;
@@ -871,7 +879,8 @@ button.calendar {
   display: inline-block;
   font-weight: 300;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5px; }
   .header-card-program.seperator {
     border-left: 1px solid #cccccc;
     padding-left: 25px; }
@@ -999,6 +1008,22 @@ button.calendar {
     -webkit-box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
     box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white; }
 
+.top-bar.mobile-nav {
+  line-height: 35px; }
+  .top-bar.mobile-nav .toggle-topbar {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: right; }
+    .top-bar.mobile-nav .toggle-topbar button.menu-icon {
+      background: #cccccc;
+      padding-left: 8px;
+      padding-right: 8px; }
+      .top-bar.mobile-nav .toggle-topbar button.menu-icon i.fa-bars {
+        font-size: 20px; }
+    .top-bar.mobile-nav .toggle-topbar button::after {
+      -webkit-box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white;
+      box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white; }
+
 .top-bar-section ul li a.selected {
   color: #75787b; }
 .top-bar-section ul li > a {
@@ -1072,7 +1097,7 @@ button.calendar {
 
 .top-bar {
   margin-top: 10px;
-  height: 65px; }
+  height: 75px; }
   .top-bar .toggle-topbar.menu-icon {
     top: 16px; }
   .top-bar .name {
@@ -1295,6 +1320,9 @@ button.calendar {
       padding-left: 10px; }
   .carousel-row .top-button-group {
     padding-top: 10px; }
+
+.orbit-container .orbit-next, .orbit-container .orbit-prev {
+  padding: 0px; }
 
 @media only screen and (min-width: 40.063em) {
   .carousel > li {

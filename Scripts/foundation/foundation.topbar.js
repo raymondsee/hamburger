@@ -69,7 +69,7 @@
             return false;
         },
         toggle: function (toggleEl) {
-            alert('in toggle');
+            //alert('in toggle');
             var self = this,
                 topbar;
             if (toggleEl) {
@@ -100,11 +100,13 @@
 
                 topbar
                   .toggleClass('expanded')
-                  .css('height', function () {alert('in toggle CSS');
+                  .css('height', function () {
+                      //alert('in toggle CSS');
                       var nav_height = null;
                       var hamburger = $(this).find("ul.title-area li.menu-icon button span");
                       if (!$(this).hasClass("expanded")) {
                           var logo_program_name_height = $(this).find('>ul').height();
+                          
                           nav_height = logo_program_name_height;
                           hamburger.text("Expand Navigation Menu");
                           $(this).find(".top-bar-section").hide();
@@ -122,7 +124,7 @@
             }
 
             if (settings.scrolltop) {
-                alert(settings.scrolltop);
+                //alert(settings.scrolltop);
                 if (!topbar.hasClass('expanded')) {
                     if (topbar.hasClass('fixed')) {
                         topbar.parent().addClass('fixed');
@@ -227,7 +229,8 @@
                       /*
                       * Visa Overides Foundation code above. Code starts here.
                       */
-                      var logo_program_name_height = topbar.find('>ul').height();
+                      //var logo_program_name_height = topbar.find('>ul').height();
+                      var logo_program_name_height = topbar.find('.logo-program-menu').height();
                       topbar.css('height', $this.siblings('ul').outerHeight(true) + logo_program_name_height);
                       /*
                       * Visa Overides Foundation code above. Code ends here.
@@ -256,9 +259,9 @@
                       }
 
 
-                      var logo_program_name_height = topbar.find('>ul').height();
+                      //var logo_program_name_height = topbar.find('>ul').height();
+                      var logo_program_name_height = topbar.find('.logo-program-menu').height();
                       topbar.css('height', $this.siblings('ul').outerHeight(true) + logo_program_name_height);
-                      console.log($this.siblings('ul').find("li.back a"));
                       // Visa customized code, the timeout below prevent the logo/program name portion doing funking animation shifting
                       setTimeout(function () {
                           $this.siblings('ul').find("li.back a").focus(); //focus is on the back button link
@@ -402,7 +405,7 @@
                     $titleLi = $('<li class="title back js-generated"><span><a role="button" tabindex="0"></a></span></li>');
 
                     // Copy link to subnav
-                    if (settings.custom_back_text == true) { 
+                    if (settings.custom_back_text == true) {
                         $('span>a', $titleLi).html(settings.back_text);
                     } else {
                         $('span>a', $titleLi).html('&laquo; ' + $link.html());

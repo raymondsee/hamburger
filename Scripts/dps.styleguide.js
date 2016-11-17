@@ -1,7 +1,9 @@
 $(function () {
-    $('.sample').on('click', function(){
-        alert('button is click');
+    $(".balance-widget").on("change", "select#teen-names-id", function () {
+        // TODO: add ajax request here to update the balance of the selected teen
+        alert('Add Ajax request here');
     });
+
 
     $("input#date-to-add-funds[data-a11y-datepicker]").a11yDatepicker();
 
