@@ -101,18 +101,21 @@
                 topbar
                   .toggleClass('expanded')
                   .css('height', function () {
-                      //alert('in toggle CSS');
                       var nav_height = null;
-                      var hamburger = $(this).find("ul.title-area li.menu-icon button span");
+                      console.log($(this));
+                      var hamburger = $(this).find(".toggle-topbar button.menu-icon");
+                      var hamburgerText = hamburger.find('span');
                       if (!$(this).hasClass("expanded")) {
                           var logo_program_name_height = $(this).find('>ul').height();
                           
                           nav_height = logo_program_name_height;
-                          hamburger.text("Expand Navigation Menu");
+                          hamburger.attr('aria-expanded', 'false');
+                          hamburgerText.text("Expand Navigation Menu");
                           $(this).find(".top-bar-section").hide();
                       } else {
                           nav_height = '';
-                          hamburger.text("Collapse Navigation Menu");
+                          hamburger.attr('aria-expanded', 'true');
+                          hamburgerText.text("Collapse Navigation Menu");
                           $(this).find(".top-bar-section").show();
                       }
                       return nav_height;
