@@ -6818,7 +6818,8 @@ button.calendar {
     box-shadow: -8px 10px 0 1px white, -8px 16px 0 1px white, -8px 22px 0 1px white; }
 
 .top-bar.mobile-nav {
-  line-height: 35px; }
+  line-height: 35px; 
+  height: auto; }
   .top-bar.mobile-nav .toggle-topbar {
     padding-right: 0px;
     padding-left: 0px;

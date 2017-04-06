@@ -69,7 +69,6 @@
             return false;
         },
         toggle: function (toggleEl) {
-            //alert('in toggle');
             var self = this,
                 topbar;
             if (toggleEl) {
@@ -102,7 +101,6 @@
                   .toggleClass('expanded')
                   .css('height', function () {
                       var nav_height = null;
-                      console.log($(this));
                       var hamburger = $(this).find(".toggle-topbar button.menu-icon");
                       var hamburgerText = hamburger.find('span');
                       if (!$(this).hasClass("expanded")) {
@@ -127,7 +125,6 @@
             }
 
             if (settings.scrolltop) {
-                //alert(settings.scrolltop);
                 if (!topbar.hasClass('expanded')) {
                     if (topbar.hasClass('fixed')) {
                         topbar.parent().addClass('fixed');
